@@ -110,7 +110,7 @@ h1 {
 }
 
 section {
-    margin-left: 10px;
+    margin: 0 10px 0 10px
 }
 
 .about-me,
@@ -141,6 +141,60 @@ section {
     margin: 1rem 1rem 1rem 0;
 }
 
+/* Portfolio */
+.portfolio-section {
+    margin: 10px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: #eee;
+    padding: 1rem;
+    /* margin-top: 10px; */
+}
+
+.portfolio figure {
+    padding: 1rem;
+    box-shadow: 0 2px 12px #0001;
+    background-color: #fff;
+}
+
+.portfolio figure img {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: 1rem auto 1rem auto;
+}
+
+.portfolio figcaption {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.portfolio-section h2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.portfolio a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.portfolio a:hover {
+    border: #483D8B solid 1px;
+}
+
+/* Certificate Courses */
+
 .certificate-courses {
     display: grid;
     grid-template-columns: 1fr;
@@ -162,7 +216,6 @@ section {
 .course-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -174,7 +227,7 @@ section {
 .course {
     border: 1px solid #ccc;
     padding: 1rem;
-    margin: 0 1rem 0.5rem 0;
+    margin: 0 0 0.5rem 0;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     text-align: center;
@@ -191,7 +244,7 @@ section {
 }
 
 .filter-btn {
-    margin-right: 1rem;
+    margin: 0 1rem;
     padding: 1rem 1rem;
     background-color: #333;
     color: white;
@@ -206,7 +259,7 @@ section {
 
 #total-credits {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 /* Footer */

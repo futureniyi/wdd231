@@ -44,17 +44,20 @@
        gap: 1rem;
    }
 
-   .student-photo {
-    margin-right: 10px;
-   }
-
-   .certificate-courses h2 {
-       margin-right: 10px;
-   }
-
    .courses {
        grid-template-columns: repeat(3, 1fr);
        gap: 1rem;
    }
-   
+
+   .portfolio {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+   }
+
+   .portfolio figure img {
+       display: block;
+       width: 100px;
+       height: auto;
+       margin: 1rem auto 1rem auto;
+   }
 }
