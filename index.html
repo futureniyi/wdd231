@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 - Olaniyi Olayiwola Bello</title>
+    <meta name="description"
+        content="My name is Olaniyi Olayiwola Bello, a software development student at BYU-Pathway Worldwide.
+        I am currently enrolled in the WDD 231 - Web Frontend Development I course.">
+    <meta name="author" content="Olaniyi Bello">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
 </head>
+
 <body>
-    <h1>WDD 231 - Olaniyi Olayiwola Bello</h1>
+    <header>
+        <img src="images/home-icon.svg" alt="site logo" width="1" height="1">
+        <span>Olaniyi Bello</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+        <div class="about">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>My name is Olaniyi Olayiwola Bello, a software development student at BYU-Pathway Worldwide.
+                I am currently enrolled in the WDD 231 - Web Frontend Development I course.
+                I am pursuing this course as part of the requirements to achieve my degree in software development.
+                </p>
+            </div>
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="/images/olaniyi-bello.jpg" alt="Olaniyi Bello" width="200" height="200" loading="lazy">
+            </div>
+        </div>
+        </section>
+
+        <section class="certificate-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+            </div>
+            <!-- Container where courses will be injected -->
+            <div class="courses" id="courses-container"></div>
+            <p id="total-credits">The total credits for courses listed above is 0</p>
+
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/futureniyi" target="_blank"><img src="images/github.svg" alt="GitHub" width="48" height="48"></a>
+            <a href="https://www.linkedin.com/in/olaniyi-bello-57067a104/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48"></a>
+            <a href="https://www.facebook.com/futureniyi" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="48" height="48"></a>
+            <a href="https://x.com/hiniyi" target="_blank"><img src="images/twitter-x.svg" alt="X" width="48" height="48"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Olaniyi Bello - Lagos, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
