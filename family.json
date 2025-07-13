@@ -1,0 +1,33 @@
+{
+    "familyName": "Bello",
+    "date": "07/05/2025",
+    "familyNumber": "5",
+    "hasVisted": false,
+    "family_members": [
+        {
+            "name": "Olayiwola",
+            "gender": "male",
+            "birthDate": "08/31/1960"
+        },
+        {
+            "name": "Boladale",
+            "gender": "Female",
+            "birthDate": "02/13/1965"
+        },
+        {
+            "name": "Dolapo",
+            "gender": "male",
+            "birthDate": "03/20/1990"
+        },
+        {
+            "name": "Olaniyi",
+            "gender": "male",
+            "birthDate": "11/27/1991"
+        },
+        {
+            "name": "Oluwasegun",
+            "gender": "male",
+            "birthDate": "05/08/1995"
+        }
+    ]
+}

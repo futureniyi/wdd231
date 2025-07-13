@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Lagos Chamber of Commerce</title>
+    <meta name="description"
+        content="Browse our directory of local businesses and organizations. Support and connect with our chamber members.">
+    <meta name="author" content="Olaniyi Bello">
+    <meta property="og:title" content="Directory | Chamber of Commerce">
+    <meta property="og:description"
+        content="Find local businesses and organizations that are members of our Chamber of Commerce.">
+    <meta property="og:image" content="images/lcci-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="main-header">
+            <img src="images/lcci-logo.png" alt="LCCI Logo" width="44" height="44">
+            <h1>Lagos Chamber of Commerce</h1>
+            <div class="header-controls">
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <button id="nav-button" class="hamburger" aria-label="Toggle menu"></button>
+            </div>
+        </header>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <button id="theme-toggle-desktop" aria-label="Toggle theme">🌙</button>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Directory</h1>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <div id="cards" class="grid"></div>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="footer-address">
+                <strong>
+                    <p>Lagos Chamber of Commerce</p>
+                </strong>
+                <p>10 Dr Nurudeen Olowopopo Way</p>
+                <p>Alausa, Ikeja, Lagos, Nigeria</p>
+                <p>info@lagoschamber.com</p>
+                <p><a href="tel:+23408098222737">+234-80-9822-2737</a></p>
+            </div>
+
+            <div class="social">
+                <a href="https://github.com/futureniyi" target="_blank"><img src="images/github.svg" alt="GitHub Icon"
+                        width="48" height="48"></a>
+                <a href="https://www.linkedin.com/in/olaniyi-bello-57067a104/" target="_blank"><img
+                        src="images/linkedin.svg" alt="LinkedIn" width="48" height="48"></a>
+                <a href="https://www.facebook.com/futureniyi" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook" width="48" height="48"></a>
+                <a href="https://x.com/hiniyi" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X"
+                        width="48" height="48"></a>
+            </div>
+
+            <div class="footer-author">
+                <p>WDD231 Class Project</p>
+                <p>Olaniyi Bello</p>
+                <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

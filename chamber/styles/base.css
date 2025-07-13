@@ -1,0 +1,397 @@
+:root {
+    --primary-color: #483D8B;
+    --secondary-color: #E6E6FA;
+    --highlight-color: #98FB98;
+    --text-color: #fff;
+    --border-color: #dddddd;
+    --main-max-width: 900px;
+    --primary-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --serif-font: 'PT Serif', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header-container {
+    background-color: #eee;
+    margin: 0;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    gap: 0.25rem;
+    margin: 0 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.main-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.header-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+.header-controls>* {
+    margin: 0;
+}
+
+/* Hamburger Button */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    order: 2;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    order: 1;
+}
+
+#theme-toggle-desktop {
+    display: none;
+}
+
+/* Nav */
+
+.navigation {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    color: #222;
+}
+
+/* Body */
+
+body {
+    font-family: var(--body-font);
+}
+
+/* Main */
+
+h1 {
+    margin-left: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--serif-font);
+}
+
+section {
+    margin: 0 10px 0 10px
+}
+
+/* Members */
+
+main h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-right: 1rem;
+}
+
+#grid,
+#list {
+    border-radius: 20px;
+}
+
+#grid:hover, #list:hover {
+    color: var(--highlight-color);
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 0.2rem 1rem;
+}
+
+.grid section {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px #454f4541;
+}
+
+.grid h1 {
+    text-align: center;
+    margin: 1rem;
+    font-family: var(--serif-font);
+    color: #4d4d96;
+}
+
+.grid h2 {
+    font-size: 0.7rem;
+    color: #4d4d96;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+    font-family: var(--primary-font);
+}
+
+.grid p {
+    text-align: left;
+    font-size: 12px;
+    font-family: var(--body-font);
+    margin-bottom: 10px;
+}
+
+.grid img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.grid .company-name {
+    display: none;
+}
+
+.grid a:hover {
+    color: var(--highlight-color);
+}
+
+/* List */
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 10px 0 10px;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0.5rem 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+.list section .company-name {
+    font-weight: bold;
+    font-family: var(--serif-font);
+}
+
+.list section:nth-child(odd) {
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+.list section a:nth-child(odd) {
+    color: #fff;
+}
+
+.list section:nth-child(odd) p.website a {
+    color: #fff;
+}
+
+.list section:nth-child(even) p.website a {
+    color: #000;
+}
+
+.list section:nth-child(even) p.website a:hover {
+    color: #4d4d96;
+}
+
+.list section:nth-child(odd) p.website a:hover {
+    color: var(--highlight-color);
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #222;
+    color: #eee;
+}
+.dark-theme .header-container {
+    background-color: #222;
+}
+
+.dark-theme a {
+    color: #98FB98;
+}
+
+.dark-theme a:hover {
+    color: #ddd;
+}
+
+.dark-theme h1 {
+    color: #fff;
+}
+
+.dark-theme .hamburger {
+    color: #fff;
+}
+
+.dark-theme #theme-toggle {
+    color: #fff;
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme #lastModified {
+    color: #98FB98;
+}
+
+.dark-theme .grid section img {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.dark-theme .list section p.website a {
+    color: var(--highlight-color);
+}
+
+.dark-theme .list section p.website a:hover {
+    color: #ccc;
+}
+
+/* .dark-theme .list section:nth-child(even) p.website a {
+    color: #fff;
+} */
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 1rem 0;
+}
+
+.social a {
+    display: flex;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.footer-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 8px;
+}
