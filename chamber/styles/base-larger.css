@@ -46,7 +46,7 @@
 
     #theme-toggle-desktop {
         display: block;
-        background: var(--primary-color);
+        background: none;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
@@ -54,6 +54,10 @@
         margin-left: 1rem;
         color: black;
     }
+
+    .dark-theme  #theme-toggle-desktop {
+         background: var(--highlight-color);
+     }
 
     .main-footer {
         display: grid;
