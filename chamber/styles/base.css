@@ -60,6 +60,10 @@
     order: 2;
 }
 
+.hamburger:hover {
+    color: #222;
+}
+
 .hamburger::before {
     content: "\2630";
 }
@@ -71,7 +75,7 @@
 #theme-toggle {
     background: var(--primary-color);
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-bottom: 0.5rem;
     order: 1;
@@ -79,6 +83,11 @@
 
 #theme-toggle-desktop {
     display: none;
+}
+
+#theme-toggle,
+#nav-button {
+    margin: 0 2px;
 }
 
 /* Navigation */
@@ -165,7 +174,7 @@ button:hover {
 
 .grid section {
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
     box-shadow: 0 0 10px #454f4541;
 }
 

@@ -48,9 +48,10 @@
         display: block;
         background: var(--primary-color);
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
         margin-top: -1rem;
+        margin-left: 1rem;
         color: black;
     }
 
