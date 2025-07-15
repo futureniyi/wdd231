@@ -14,6 +14,7 @@
     .main-header {
         border-bottom: none;
         margin: 0 auto;
+        align-items: center;
     }
 
     .main-header img {
@@ -38,10 +39,21 @@
         display: flex;
         flex-direction: row;
         text-align: center;
+        gap: 0.75rem;
     }
 
     .navigation a {
-        padding: 0 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .navigation li.current {
+        background-color: var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .navigation li.current a {
+        color: var(--text-color);
+        font-weight: bold;   
     }
 
     #theme-toggle-desktop {
@@ -52,7 +64,9 @@
         cursor: pointer;
         margin-top: -1rem;
         margin-left: 1rem;
+        margin-right: 0.5rem;
         color: black;
+        padding-top: 1rem;
     }
 
     .dark-theme  #theme-toggle-desktop {

@@ -118,7 +118,13 @@
 }
 
 .navigation li.current {
-    text-decoration: underline;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.navigation li.current a {
+    color: var(--text-color);
+    font-weight: bold;
 }
 
 .navigation a:hover {
