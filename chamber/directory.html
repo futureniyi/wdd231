@@ -56,15 +56,10 @@
     <main id="main-content">
         <h1>Directory</h1>
         <div class="menu">
-            <!-- <button id="grid">Grid</button>
-            <button id="list">List</button>  -->
-            <!-- Add explicit labels and better ARIA attributes -->
             <button id="grid" aria-pressed="true" aria-label="View directory in grid format">Grid</button>
             <button id="list" aria-pressed="false" aria-label="View directory in list format">List</button>
         </div>
 
-        <!-- <div id="cards" class="grid"></div> -->
-        <!-- Add ARIA live region for dynamic updates -->
         <div id="cards" class="grid" aria-live="polite" aria-label="Directory listings"></div>
     </main>
     <footer>
