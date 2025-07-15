@@ -118,7 +118,7 @@
 }
 
 .navigation li.current {
-    background-color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .navigation a:hover {
