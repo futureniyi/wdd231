@@ -205,7 +205,7 @@ main h1 {
 
 .grid p {
     text-align: left;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: var(--body-font);
     margin-bottom: 10px;
 }
@@ -248,7 +248,7 @@ main h1 {
 }
 
 .list section h3 {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .list section .company-name {
@@ -276,6 +276,40 @@ main h1 {
 
 .list section:nth-child(odd) p.website a:hover {
     color: var(--highlight-color);
+}
+
+
+/* Accessibility */
+.navigation a:focus,
+#grid:focus,
+#list:focus,
+#theme-toggle:focus,
+#nav-button:focus {
+    outline: 2px solid var(--highlight-color);
+    outline-offset: 2px;
+}
+
+.dark-theme .navigation a:focus,
+.dark-theme #grid:focus,
+.dark-theme #list:focus {
+    outline-color: var(--highlight-color);
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 6px;
 }
 
 /* Footer */
@@ -362,6 +396,10 @@ footer p {
 .dark-theme footer {
     color: var(--text-color);
     background-color: var(--bg-color);
+}
+
+.dark-theme #theme-toggle {
+    background: var(--highlight-color);
 }
 
 .dark-theme #lastModified {
