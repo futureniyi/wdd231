@@ -74,6 +74,7 @@ function displayCurrent(data) {
 
     weatherIcon.setAttribute('src', iconURL);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.hidden = false;
     captionDesc.textContent = desc;
 }
 
