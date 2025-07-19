@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -56,13 +59,60 @@
         </div>
     </header>
     <main id="main-content">
-        <h1>Home</h1>
-        <div class="menu">
-            <button id="grid" aria-pressed="true" aria-label="View directory in grid format">Grid</button>
-            <button id="list" aria-pressed="false" aria-label="View directory in list format">List</button>
+        <div class="hero" id="hero-home">
+            <picture class="hero-picture">
+                <source media="(min-width: 600px)" srcset="images/lagos-hero-large.webp">
+                <img src="images/lagos-hero.webp" alt="Hero Image" loading="lazy">
+            </picture>
+            <div class="button-hero-home">
+                <a href="#" target="_blank" rel="noopener" class="hero-button"
+                    aria-label="Get Keynote Tickets">Keynote Tickets</a>
+            </div>
         </div>
+        <h1>Home</h1>
+        <section class="dashboard-section">
+        
+            <div class="events-block" aria-labelledby="events-heading" role="region" aria-live="polite">
+                <h2 id="events-heading">Upcoming Events</h2>
+                <div id="events" class="events"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate laudantium voluptatum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam iste pariatur reiciendis.</p>
+            </div>
+        
+            <div class="weather-block" aria-labelledby="weather-heading" role="region" aria-live="polite">
+                <h2 id="weather-heading">Current Weather</h2>
+                <div id="weather" class="weather">
+                    <div class="weather-first">
+                        <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                    </div>
+                    <div class="weather-second">
+                        <p><span id="current-temp"></span></p>
+                        <p class="weather-description"></p>
+                        <p>High: <span id="high-temp"></span></p>
+                        <p>Low: <span id="low-temp"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="forecast-block" aria-labelledby="forecast-heading" role="region" aria-live="polite">
+                <h2 id="forecast-heading">Weather Forecast</h2>
+                <div id="forecast" class="forecast">
+                    <p><span id="today"></span></p>
+                    <p><span id="tomorrow"></span></p>
+                    <p><span id="overmorrow"></span></p>
+                    
+                </div>
 
-        <div id="cards" class="grid" aria-live="polite" aria-label="Directory listings"></div>
+            </div>
+        </section>
+        <section id="spotlights" class="spotlight-section">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-cards"></div>
+        </section>
+          
     </main>
     <footer>
         <div class="main-footer">

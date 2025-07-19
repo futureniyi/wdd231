@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+
+    /* Section */
+    .dashboard-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .weather {
+        grid-template-columns: 70px auto;
+    }
+
+    .weather-second {
+        font-size: 0.8rem;   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .button-hero-home {
+        bottom: 2rem;
+        right: 2rem;
+    }
+    
+}

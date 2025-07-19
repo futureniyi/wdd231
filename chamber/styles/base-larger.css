@@ -1,8 +1,8 @@
 @media only screen and (min-width: 38rem) {
 
-    main {
-        max-width: var(--main-max-width);
-        margin: 0 auto;
+    html {
+            max-width: var(--main-max-width);
+            margin: 0 auto;
     }
 
     .header-container {

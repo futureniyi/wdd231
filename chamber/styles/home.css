@@ -1,0 +1,148 @@
+/* Section */
+
+.events-block, .weather-block, .forecast-block {
+    border: 1px solid #ddd;
+    /* padding: 0.5rem; */
+    margin: 0 0.5rem;
+    box-shadow: 0 0 10px #454f4541;
+    transition: box-shadow 0.3s ease;
+}
+
+.events-block p,
+.weather-block p,
+.forecast-block p {
+    margin: 1rem 1rem;
+    /* word-break: break-word; */
+    text-align: left;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.weather-first {
+    margin: 0;
+}
+
+#weather-icon {
+    margin: 0;
+    width: 80px;
+}
+
+.forecast-block p {
+    /* word-break: break-word; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    font-size: 1rem;
+}
+
+.events-block h2,
+.weather-block h2,
+.forecast-block h2 {
+    padding: 1.5rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+/* ===== HERO SECTION - MOBILE ===== */
+
+.hero {
+    position: relative;
+}
+
+.button-hero-home {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 19px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+
+.spotlight-section, .dashboard-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 0.2rem 1rem;
+}
+
+.spotlight-card {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 10px #454f4541;
+    transition: box-shadow 0.3s ease;
+}
+
+.spotlight-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+.spotlight-logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-right: 0.5px solid #ddd;
+    padding-right: 0.4rem;
+}
+
+.spotlight-top h3 {
+    font-size: 1rem;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+.spotlight-info {
+    margin: 1rem 0.5rem;
+}
+
+.spotlight-info p {
+    margin: 1rem 0;
+    word-break: break-word;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
