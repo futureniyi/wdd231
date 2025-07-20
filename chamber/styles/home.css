@@ -156,3 +156,21 @@
     font-size: 1.1rem;
     color: #333;
 }
+
+/* Dark Theme */
+.dark-theme .dashboard-section, .spotlight-section {
+    background-color: #333;
+}
+
+.dark-theme .event h3 {
+    color: var(--link-color);
+}
+
+.dark-theme p {
+    color: var(--link-color);
+}
+
+.dark-theme .spotlight-logo {
+    background-color: #ccc;
+    padding: 1rem;
+}
