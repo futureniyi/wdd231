@@ -158,7 +158,7 @@
 }
 
 /* Dark Theme */
-.dark-theme .dashboard-section, .spotlight-section {
+.dark-theme .dashboard-section, .dark-theme .spotlight-section {
     background-color: #333;
 }
 
