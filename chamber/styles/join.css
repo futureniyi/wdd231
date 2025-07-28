@@ -1,0 +1,248 @@
+p {
+    line-height: 1.5;
+    margin: 8px;
+    padding: 0 1rem;
+}
+
+form {
+    margin: 1rem 2%;
+}
+
+label {
+    display: block;
+    font-size: .8rem;
+    color: var(--primary-color);
+    padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+textarea,
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 280px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input:required,
+select:required,
+textarea:required {
+    border-left-color: #d70000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+input:required:valid,
+select:required:valid,
+textarea:required:valid {
+    border-left-color: green;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=submit]:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+    background-color: var(--highlight-color);
+    border: 1px solid #3D405B;
+    border-radius: 6px;
+    margin: 0 8px;
+}
+
+#results p {
+    margin: 8px;
+    line-height: 1.5;
+}
+
+.form-member {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+}
+
+.membership-card {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #454f4541;
+    transition: box-shadow 0.3s ease;
+    animation: fadeInSlide 1s ease forwards;
+    opacity: 0;
+}
+
+.form-member h2,
+.membership-card h3 {
+    font-family: var(--serif-font);
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.membership-card h3 {
+    font-family: var(--serif-font);
+    font-weight: 700;
+}
+
+#np-btn,
+#bronze-btn,
+#silver-btn,
+#gold-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#np-btn:hover,
+#bronze-btn:hover,
+#silver-btn:hover,
+#gold-btn:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.mod-header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid #ddd;
+    font-weight: 700;
+    font-family: var(--serif-font);
+}
+
+dialog h3 {
+    font-size: 1.5rem;
+}
+
+dialog .close-btn {
+    background: white;
+    padding: 1rem 0;
+    border: 1px solid #222;
+}
+
+dialog ul {
+    font-size: 1.2rem;
+    margin: 1rem;
+    line-height: 1.5;
+    list-style: none;
+}
+
+/* Dark Theme */
+.dark-theme .membership-card {
+    color: #222;
+}
+
+.dark-theme label {
+    color: #ddd;
+}
+
+/* Animation */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.membership-card:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes modalFadeZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+dialog[open] {
+    animation: modalFadeZoom 0.3s ease forwards;
+}

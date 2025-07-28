@@ -10,7 +10,7 @@
     <meta name="author" content="Olaniyi Bello">
     <meta property="og:title" content="Join - Lagos Chamber of Commerce">
     <meta property="og:description"
-        content="Find local businesses and organizations that are members of our Chamber of Commerce.">
+        content="Join local businesses and organizations. Support and connect with our chamber members.">
     <meta property="og:image" content="https://futureniyi.github.io/wdd231/chamber/images/lcci-image.jpg">
     <meta property="og:url" content="https://futureniyi.github.io/wdd231/chamber/directory.html">
     <meta property="og:locale" content="en_US">
@@ -22,8 +22,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/footer.js" defer></script>
 </head>
 
@@ -57,17 +60,156 @@
     </header>
     <main id="main-content">
         <h1>Join</h1>
-        <div class="menu">
-            <!-- <button id="grid">Grid</button>
-            <button id="list">List</button>  -->
-            <!-- Add explicit labels and better ARIA attributes -->
-            <button id="grid" aria-pressed="true" aria-label="View directory in grid format">Grid</button>
-            <button id="list" aria-pressed="false" aria-label="View directory in list format">List</button>
+        <div class="form-member">
+            <div>
+            <h2>Membership Application Form</h2>
+            <form method="GET" action="thankyou.html" class="membership-form">
+            
+                <!-- First Name -->
+                <label>
+                    First Name:
+                    <input type="text" name="first" required title="Your First Name" autocomplete="given-name"
+                        placeholder="e.g. John">
+                </label>
+            
+                <!-- Last Name -->
+                <label>
+                    Last Name:
+                    <input type="text" name="last" required title="Your Last Name" autocomplete="family-name"
+                        placeholder="e.g. Doe">
+                </label>
+            
+                <!-- Organizational Title -->
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgtitle" required title="Your title within the organization" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" placeholder="e.g. Senior Developer">
+                </label>
+            
+                <!-- Email -->
+                <label>
+                    Email:
+                    <input type="email" name="email" required title="Your email address" autocomplete="email"
+                        placeholder="e.g. johndoe@example.com">
+                </label>
+            
+                <!-- Mobile Phone -->
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Your mobile phone number" autocomplete="tel"
+                        placeholder="e.g. 987-555-1234">
+                </label>
+            
+                <!-- Organization Name -->
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" required title="Name of your organization" autocomplete="organization"
+                        placeholder="e.g. Tech Innovators Ltd.">
+                </label>
+            
+                <!-- Membership Level (select box) -->
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Choose your membership level">
+                        <option value="">-- Select Membership Level --</option>
+                        <option value="NP">NP Membership (Non-profit, Free)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+            
+                <!-- Business Description -->
+                <label>
+                    Business/Organization Description:
+                    <textarea name="description" required title="Describe your business or organization" rows="4"
+                        placeholder="Describe what your organization does..."></textarea>
+                </label>
+            
+                <!-- Timestamp (hidden) -->
+                <input type="hidden" name="timestamp" id="timestamp">
+            
+                <!-- Submit Button -->
+                <label>
+                    <input type="submit" value="Become a Member">
+                </label>
+            </form>
+            </div>
+            <div id="membership-levels">
+                <h2>Membership Levels</h2>
+                <!-- NP Membership -->
+                <div class="membership-card np">
+                    <h3>NP Membership</h3>
+                    <p>Perfect for non-profit organizations. No fees.</p>
+                    <button id="np-btn">More Info</button>
+                    <dialog id="modal-np">
+                        <div class="mod-header">
+                            <h3>NP Membership Benefits</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <ul>
+                            <li>Free Membership</li>
+                            <li>Access to monthly networking events</li>
+                            <li>Newsletter listing</li>
+                        </ul>
+                    </dialog>
+                </div>
+            
+                <!-- Bronze Membership -->
+                <div class="membership-card bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic visibility and member events.</p>
+                    <button id="bronze-btn">More Info</button>
+                    <dialog id="modal-bronze">
+                        <div class="mod-header">
+                            <h3>Bronze Membership Benefits</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <ul>
+                            <li>All NP Benefits</li>
+                            <li>Basic training access</li>
+                            <li>Logo display on members page</li>
+                        </ul>
+                    </dialog>
+                </div>
+            
+                <!-- Silver Membership -->
+               <div class="membership-card silver">
+                    <h3>Silver Membership</h3>
+                    <p>Includes training access and business highlights.</p>
+                    <button id="silver-btn">More Info</button>
+                    <dialog id="modal-silver">
+                        <div class="mod-header">
+                            <h3>Silver Membership Benefits</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <ul>
+                            <li>All Bronze Benefits</li>
+                            <li>Quarterly spotlight on homepage</li>
+                            <li>Exclusive business directory</li>
+                        </ul>
+                    </dialog>
+                </div>
+            
+                <!-- Gold Membership -->
+                <div class="membership-card gold">
+                    <h3>Gold Membership</h3>
+                    <p>Top-tier benefits including spotlight advertising.</p>
+                    <button id="gold-btn">More Info</button>
+                    <dialog id="modal-gold">
+                        <div class="mod-header">
+                            <h3>Gold Membership Benefits</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <ul>
+                            <li>All Silver Benefits</li>
+                            <li>Priority event sponsorship</li>
+                            <li>Customized advertising features</li>
+                        </ul>
+                    </dialog>
+                </div>
+            </div>
         </div>
-
-        <!-- <div id="cards" class="grid"></div> -->
-        <!-- Add ARIA live region for dynamic updates -->
-        <div id="cards" class="grid" aria-live="polite" aria-label="Directory listings"></div>
     </main>
     <footer>
         <div class="main-footer">

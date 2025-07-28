@@ -90,6 +90,7 @@ function updateTotalCredits(courseList) {
 
 const container = document.getElementById("courses-container");
 const filterButtons = document.querySelectorAll(".filter-btn");
+const courseDetails = document.querySelector("#course-details");
 
 // Helper to clear course grid
 function clearCourses() {
@@ -105,6 +106,11 @@ function displayCourses(coursesArray) {
         div.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
         `;
+
+        div.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+        
         container.appendChild(div);
     });
 
@@ -128,4 +134,31 @@ filterButtons.forEach(button => {
         displayCourses(filtered);
     });
 });
-  
+
+function displayCourseDetails(course) {
+    // courseDetails.innerHTML = '#course-details';
+    courseDetails.innerHTML = `
+    <div class="header">
+        <h2>${course.subject} ${course.number}</h2>
+        <button id="closeModal">❌</button>
+    </div>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener("click", (e) => {
+        if (e.target === courseDetails) {
+            courseDetails.close();
+        }
+    });
+
+}
