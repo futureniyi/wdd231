@@ -1,0 +1,60 @@
+.place-card {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "figure"
+    "description"
+    "address"
+    "button";
+}
+
+
+
+.place-name {
+    margin: 1rem 10px;
+    grid-area: title;
+    /* font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.place-image {
+    width: 100%;
+    grid-area: figure;
+}
+
+.place-description {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.place-address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+.learn-more-btn {
+    margin: 1rem 10px;
+    grid-area: button;
+    padding: 1rem 10px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.visit-message {
+    margin: 1rem 10px;
+}
+
+.dark-theme .place-card {
+    color: black;
+}

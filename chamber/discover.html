@@ -22,8 +22,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <!-- <script src="scripts/members.js" defer></script> -->
     <script src="scripts/footer.js" defer></script>
 </head>
 
@@ -57,12 +60,10 @@
     </header>
     <main id="main-content">
         <h1>Discover</h1>
-        <div class="menu">
-            <button id="grid" aria-pressed="true" aria-label="View directory in grid format">Grid</button>
-            <button id="list" aria-pressed="false" aria-label="View directory in list format">List</button>
-        </div>
+        <div id="visit-message" class="visit-message"></div>
 
-        <div id="cards" class="grid" aria-live="polite" aria-label="Directory listings"></div>
+        <div id="places" class="places"></div>
+
     </main>
     <footer>
         <div class="main-footer">
@@ -93,6 +94,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/discover.js" type="module"></script>
 </body>
 
 </html>

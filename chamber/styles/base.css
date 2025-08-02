@@ -4,7 +4,7 @@
     --highlight-color: #98FB98;
     --text-color: #fff;
     --border-color: #dddddd;
-    --main-max-width: 900px;
+    --main-max-width: 1200px;
     --primary-font: 'Montserrat', sans-serif;
     --body-font: 'Lato', sans-serif;
     --serif-font: 'PT Serif', serif;
@@ -178,8 +178,11 @@ main h1 {
 .grid {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0.2rem 1rem;
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid section {
@@ -214,6 +217,7 @@ main h1 {
     font-size: 0.75rem;
     font-family: var(--body-font);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .grid img {
