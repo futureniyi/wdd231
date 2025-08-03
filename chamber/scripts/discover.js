@@ -1,22 +1,35 @@
 const url = 'data/places.json';
 const cards = document.querySelector('#places');
 
+// Fetch and display places
 async function getPlaceData() {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
-    displayPlaces(data); 
+    displayPlaces(data);
 }
 
 getPlaceData();
 
 const displayPlaces = (places) => {
+    const modal = document.getElementById('modal-cost');
+    const modalCostText = document.getElementById('modal-cost-text');
+    const modalClose = modal.querySelector('.close-btn');
+
+    // Close modal when X is clicked
+    modalClose.addEventListener('click', () => modal.close());
+
+    // Close modal when clicking outside the dialog
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.close();
+        }
+    });
+
     places.forEach((place) => {
-        // Create card container
         const card = document.createElement('section');
         card.classList.add('place-card');
 
-        // Place name
+        // Title
         const title = document.createElement('h2');
         title.classList.add('place-name');
         title.textContent = place.name;
@@ -31,17 +44,13 @@ const displayPlaces = (places) => {
         description.classList.add('place-description');
         description.textContent = place.description;
 
-        // Figure element with image
+        // Image
         const figure = document.createElement('figure');
-
         const placeImage = document.createElement('img');
-        placeImage.setAttribute('src', place.photo_url);
-        placeImage.setAttribute('alt', `Photo of ${place.name}`);
-        placeImage.setAttribute('loading', 'lazy');
-        // placeImage.setAttribute('width', '300');
-        // placeImage.setAttribute('height', '200');
+        placeImage.src = place.photo_url;
+        placeImage.alt = `Photo of ${place.name}`;
+        placeImage.loading = 'lazy';
         placeImage.classList.add('place-image');
-
         figure.appendChild(placeImage);
 
         // Learn More button
@@ -49,36 +58,33 @@ const displayPlaces = (places) => {
         button.classList.add('learn-more-btn');
         button.textContent = "Learn More";
 
+        // Show modal with cost
+        button.addEventListener('click', () => {
+            modalCostText.textContent = place.cost;
+            modal.showModal();
+        });
+
         // Assemble card
         card.appendChild(title);
         card.appendChild(placeImage);
         card.appendChild(address);
         card.appendChild(description);
         card.appendChild(button);
-
-        // Add card to container
         cards.appendChild(card);
     });
 };
 
-// const PlaceCost = document.createElement('p');
-// caption.classList.add('place-cost');
-// caption.textContent = place.cost;
-
+// Visitor message using localStorage
 const messageElement = document.getElementById('visit-message');
 const now = Date.now();
-const msToDays = 1000 * 60 * 60 * 24; // milliseconds in a day
-
-// Get the last visit timestamp from localStorage
+const msToDays = 1000 * 60 * 60 * 24;
 const lastVisit = localStorage.getItem('lastVisit');
 let message = '';
 
 if (!lastVisit) {
-    // First visit
     message = "Welcome! Let us know if you have any questions.";
 } else {
     const daysSince = Math.floor((now - Number(lastVisit)) / msToDays);
-
     if (daysSince < 1) {
         message = "Back so soon! Awesome!";
     } else if (daysSince === 1) {
@@ -88,8 +94,5 @@ if (!lastVisit) {
     }
 }
 
-// Display the message
 messageElement.textContent = message;
-
-// Update localStorage with the current visit timestamp
 localStorage.setItem('lastVisit', now);

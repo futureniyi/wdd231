@@ -19,9 +19,9 @@
 .place-name {
     margin: 1rem 10px;
     grid-area: title;
-    /* font-size: 1.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .place-image {
@@ -57,4 +57,52 @@
 
 .dark-theme .place-card {
     color: black;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.mod-header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid #ddd;
+    font-weight: 700;
+    font-family: var(--serif-font);
+    text-align: center;
+}
+
+dialog h3 {
+    font-size: 1.5rem;
+}
+
+dialog .close-btn {
+    background: white;
+    padding: 1rem 0;
+    border: 1px solid #222;
+}
+
+dialog p {
+    font-size: 1.2rem;
+    margin: 1rem;
+    line-height: 1.5;
+    list-style: none;
 }
