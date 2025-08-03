@@ -38,8 +38,8 @@ const displayPlaces = (places) => {
         placeImage.setAttribute('src', place.photo_url);
         placeImage.setAttribute('alt', `Photo of ${place.name}`);
         placeImage.setAttribute('loading', 'lazy');
-        placeImage.setAttribute('width', '300');
-        placeImage.setAttribute('height', '200');
+        // placeImage.setAttribute('width', '300');
+        // placeImage.setAttribute('height', '200');
         placeImage.classList.add('place-image');
 
         figure.appendChild(placeImage);
