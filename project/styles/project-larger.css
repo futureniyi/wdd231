@@ -1,0 +1,261 @@
+@media only screen and (min-width: 40em) {
+
+    /* Header Styles */
+    header {
+        grid-template-columns: auto 1fr;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 2.2rem;
+        padding: 1rem 2.5rem;
+    }
+
+    .logo {
+        max-width: 240px;
+        height: auto;
+        display: block;
+        margin: 0 1rem auto 4rem;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+
+    .navigation a {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 0 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation .nav-cta {
+        background: white;
+        color: var(--primary-color);
+        border-radius: 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        border: 1px solid transparent;
+        border-color: var(--highlight-color);
+        text-wrap: nowrap;
+    }
+
+    .navigation .nav-cta:hover,
+    .navigation .nav-cta:focus {
+        background: white;
+        color: var(--primary-color);
+        border-color: var(--highlight-color);
+        outline: none;
+    }
+
+    .navigation .nav-cta {
+        background: white;
+        color: var(--primary-color);
+        border-radius: 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        border: 1px solid transparent;
+        border-color: var(--highlight-color);
+    }
+
+
+    /* Hero Section Styles */
+
+    .hero-section {
+        padding: 4rem 0;
+        margin: 0 auto;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-question {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        justify-self: center;
+    }
+
+    .hero-cards {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: stretch;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    .hero-card {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: 320px;
+        flex-direction: column;
+        height: 320px;
+        padding: 2rem 1.5rem;
+        justify-content: space-between;
+        box-shadow: 0 6px 24px rgba(72, 61, 139, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hero-card img {
+        width: 80px;
+        height: 80px;
+        align-self: flex-end;
+        margin: 0;
+    }
+
+    .card-content {
+        margin-bottom: 2rem;
+    } 
+
+    /* Why Us Section */
+    .why-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        padding: 3rem 2rem;
+    }
+
+    .why-us-left,
+    .why-us-right {
+        width: 100%;
+    }
+
+    .why-us-left {
+        text-align: right;
+        justify-items: right;
+    }
+
+    .why-us-right {
+        gap: 2rem;
+        padding-left: 2rem;
+    }
+
+    .why-us img {
+        display: block;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;  
+    }
+
+    .stat-box {
+        text-align: left;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Testimonials */
+    .testimonials-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+      }
+
+    .testimonial-card {
+        max-width: 350px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+      /* CTA Button */
+    .cta-btn {
+        font-size: 1.25rem;
+        padding: 1.2rem 0;
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .testimonial-card img {
+        width: 110px;
+        height: 150px;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-bottom: 1.2rem;
+        border: 3px solid #e6e6fa;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.2rem;
+        align-items: stretch;
+    }
+
+    .process-section {
+        padding: 4rem 2rem;
+    }
+
+    .therapists-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .therapists-text {
+        text-align: left;
+        max-width: 480px;
+    }
+
+    .therapists-image img {
+        width: 300px;
+    }
+
+    .therapists-image picture,
+    .therapists-image img {
+        max-width: 420px;
+    }
+
+    .about-columns {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .about-block {
+        padding: 2.5rem 2rem;
+    }
+
+    .about-values-list li {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .about-block p {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+  
+}
+
+@media only screen and (min-width: 64em) {
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo {
+        max-width: 260px;
+    }
+
+}

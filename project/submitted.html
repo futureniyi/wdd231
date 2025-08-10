@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Scheduled</title>
+    <meta name="description" content="Confirmation page for Relationship Battery Check-In submission. Thank you for checking in!">
+    <meta name="author" content="Olaniyi Bello">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/project-larger.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/relationship-battery-logo.png" alt="Relationship Battery Logo" class="logo"
+                loading="lazy" width="400"></a>
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="battery-form.html" title="Check Your Battery" class="nav-cta">Check Your Battery</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="faq.html" title="Frequently Asked Questions">FAQ</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <section class="hero-section">
+            <h2>Session Scheduled</h2>
+            <div class="hero-question">
+                <p>Thank You for Scheduling Your Session!</p>
+            </div>
+        </section>
+
+        <div class="submitted-message">
+            <p class="paragraph-intro">Your first session has been scheduled successfully.
+               <br> One of our team members will reach out to you shortly to confirm the details.
+                <br>We appreciate your trust in us and look forward to supporting you on your journey.
+                <br>If you have any questions or need further assistance, please feel free to contact us at
+                <a href="mailto:sessions@relationshipbattery.com">sessions@relationshipbattery.com</a>
+            </p>
+            <p class="count-message" id="submissionMsg"></p>
+        </div>
+        
+        <div class="cta-container">
+            <a href="index.html" class="cta-btn">Return Home</a>
+        </div>
+       
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Relationship Battery - Lagos, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

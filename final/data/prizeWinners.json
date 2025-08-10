@@ -1,0 +1,120 @@
+[
+    {
+        "name": "Musa-Samuel Toluwanimi",
+        "award": "Best Graduating Student – Senior School (SS3)",
+        "year": 2024,
+        "recipient": "student",
+        "schoolLevel": "senior",
+        "prizeDetails": [
+            "Cash: ₦50,000 (Suregift Card)",
+            "Certificate of Award",
+            "Book: Atomic Habits by James Clear"
+        ],
+        "nominationProcess": "Nominated by principal based on academic performance.",
+        "image": "images/2024-bgs-senior-school.webp"
+    },
+    {
+        "name": "Obot Rejoice Mandu",
+        "award": "Best Graduating Student – Senior School (SS3)",
+        "year": 2025,
+        "recipient": "student",
+        "schoolLevel": "senior",
+        "prizeDetails": [
+            "Cash: ₦50,000 (Suregift Card)",
+            "Certificate of Award",
+            "Book: Outliers: The Story of Success by Malcolm Gladwell"
+        ],
+        "nominationProcess": "Nominated by principal based on academic performance.",
+        "image": "images/2025-bgs-senior-school.webp"
+    },
+    {
+        "name": "Musa-Samuel Oluwatofunmi",
+        "award": "Best Graduating Student – Junior School (JSS3)",
+        "year": 2024,
+        "recipient": "student",
+        "schoolLevel": "junior",
+        "prizeDetails": [
+            "Cash: ₦50,000 (Suregift Card)",
+            "Certificate of Award",
+            "Book: Atomic Habits by James Clear"
+        ],
+        "nominationProcess": "Nominated by principal based on academic performance.",
+        "image": "images/2024-bgs-junior-school.webp"
+    },
+    {
+        "name": "Olawale Rebecca",
+        "award": "Best Graduating Student – Junior School (JSS3)",
+        "year": 2025,
+        "recipient": "student",
+        "schoolLevel": "junior",
+        "prizeDetails": [
+            "Cash: ₦50,000 (Suregift Card)",
+            "Certificate of Award",
+            "Book: Atomic Habits by James Clear"
+        ],
+        "nominationProcess": "Nominated by principal based on academic performance.",
+        "image": "images/2025-bgs-junior-school.webp"
+    },
+    {
+        "name": "Adelegan Toluwanimi",
+        "award": "Best in Literature-in-English – Patricia Chukwuma Award",
+        "year": 2025,
+        "recipient": "student",
+        "schoolLevel": "senior",
+        "prizeDetails": [
+            "Cash: ₦30,000",
+            "Certificate of Award",
+            "Book: Dream Country by Chimamanda Ngozi Adichie"
+        ],
+        "nominationProcess": "Selected based on outstanding performance in Literature-in-English. Award established by the Chukwuma family in honor of their dear mother.",
+        "image": "images/2025-pca.webp"
+    },
+    {
+        "name": "Pastor Charles Elobuike",
+        "award": "Male Teacher Legacy Award",
+        "year": 2024,
+        "recipient": "teacher",
+        "prizeDetails": [
+            "Cash: ₦50,000",
+            "Award Plaque"
+        ],
+        "nominationProcess": "Selected by alumni vote. Verified years of service.",
+        "image": "images/2024-male-teacher.webp"
+    },
+    {
+        "name": "Mr. Akinnawonu Olubunmi Thompson",
+        "award": "Male Teacher Legacy Award",
+        "year": 2025,
+        "recipient": "teacher",
+        "prizeDetails": [
+            "Cash: ₦50,000",
+            "Award Plaque"
+        ],
+        "nominationProcess": "Selected by alumni vote. Verified years of service.",
+        "image": "images/2025-male-teacher.webp"
+    },
+    {
+        "name": "Pastor Comfort Omoyeni",
+        "award": "Female Teacher Legacy Award",
+        "year": 2024,
+        "recipient": "teacher",
+        "prizeDetails": [
+            "Cash: ₦50,000",
+            "Award Plaque"
+        ],
+        "nominationProcess": "Selected by alumni vote. Verified years of service.",
+        "image": "images/2024-teacher-female.webp"
+    },
+    {
+        "name": "Mrs. Esther Lisa",
+        "award": "Female Teacher Legacy Award",
+        "year": 2025,
+        "recipient": "teacher",
+        "prizeDetails": [
+            "Cash: ₦50,000",
+            "Award Plaque"
+        ],
+        "nominationProcess": "Selected by alumni vote. Verified years of service.",
+        "image": "images/2025-teacher-female.webp"
+    }
+]

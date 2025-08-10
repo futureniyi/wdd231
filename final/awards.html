@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RHS 2007 Alumni - Awards</title>
+    <meta name="description"
+        content="Explore the prize categories and award criteria supported by the RHS 2007 Alumni Bond Set.">
+    <meta name="author" content="RHS 2007 Alumni Committee">
+    <meta property="og:title" content="RHS 2007 Alumni - Awards">
+    <meta property="og:description"
+        content="Discover the awards recognizing student excellence and teacher dedication.">
+    <meta property="og:image" content="https://futureniyi.github.io/wdd231/final/images/lcci-image.jpg">
+    <meta property="og:url" content="https://futureniyi.github.io/wdd231/final/awards.html">
+    <meta property="og:locale" content="en_US">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/quotes.js" defer></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <div class="container header-container">
+                <div class="main-header">
+                    <img src="images/rhs-logo.webp" alt="LCCI Logo" width="44" height="44">
+                    <h1 class="site-title" id="site-title">RHS 2007 Alumni Bond Set</h1>
+                    <button id="nav-button" type="button" class="hamburger" aria-label="Toggle menu"></button>
+                </div>
+
+                <nav id="nav-bar" class="navigation" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li><a href="news.html">News</a></li> -->
+                        <li class="current"><a href="awards.html">Awards</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <div class="prize-cat-sec">
+                <div class="container">
+                    <h2 class="prize-cat-heading">Prize Categories</h2>
+                    <div id="prize-list" class="prize-category"></div>
+                </div>
+            </div>
+            <div class="prize-det-sec">
+                <div class="container">
+                    <h2 class="prize-det-heading">Prize Awards</h2>
+                    <div class="prize-filter-buttons">
+                        <button class="filter-btn" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="student">Students</button>
+                        <button class="filter-btn" data-filter="teacher">Teachers</button>
+                        <button class="filter-btn" data-filter="senior">Senior School</button>
+                        <button class="filter-btn" data-filter="junior">Junior School</button>
+                        <!-- <button class="filter-btn" data-filter="2024">2024</button>
+                        <button class="filter-btn" data-filter="2025">2025</button> -->
+                    </div>
+
+                    <div id="prize-details" class="prize-cards"></div>
+
+                </div>
+            </div>
+           <div class="prize-win-sec">
+                <div class="container">
+                    <h2 class="prize-win-heading">Prize Winners</h2>
+                    <div class="winner-filter-buttons">
+                        <button class="filter-btn" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="student">Students</button>
+                        <button class="filter-btn" data-filter="teacher">Teachers</button>
+                        <button class="filter-btn" data-filter="senior">Senior School</button>
+                        <button class="filter-btn" data-filter="junior">Junior School</button>
+                        <button class="filter-btn" data-filter="2024">2024</button>
+                        <button class="filter-btn" data-filter="2025">2025</button>
+                    </div>
+
+                    
+                    <div id="prize-winners" class="winner-cards"></div>
+                </div>
+            </div>
+            <div class="quotes-sec">
+                <div class="container">
+                    <h2 class="quotes-heading"> Wise Words </h2>
+                    <div id="quotes" class="quotes"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="main-footer">
+                <div class="footer-address">
+                    <p>&copy; <span id="currentyear"></span> RHS 2007 Alumni Bond Set</p>
+                </div>
+
+                <div class="social">
+                    <a href="https://github.com/futureniyi" target="_blank"><img src="images/github.svg"
+                            alt="GitHub Icon" width="48" height="48"></a>
+                    <a href="https://www.linkedin.com/in/olaniyi-bello-57067a104/" target="_blank"><img
+                            src="images/linkedin.svg" alt="LinkedIn" width="48" height="48"></a>
+                    <a href="https://www.facebook.com/futureniyi" target="_blank"><img src="images/facebook.svg"
+                            alt="Facebook" width="48" height="48"></a>
+                    <a href="https://x.com/hiniyi" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X"
+                            width="48" height="48"></a>
+                </div>
+
+                <div class="footer-author">
+                    <p id="lastModified"></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script type="module" src="scripts/final.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <meta name="description"
+    content="Get in touch with Relationship Battery. We're here to help you strengthen your relationship.">
+  <meta name="author" content="Olaniyi Bello">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=PT+Serif:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/project-larger.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/relationship-battery-logo.png" alt="Relationship Battery Logo" class="logo"
+        loading="lazy" width="400"></a>
+    <button id="menu" aria-label="Menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="battery-form.html" title="Check Your Battery" class="nav-cta">Check Your Battery</a></li>
+        <li><a href="about.html" title="About">About</a></li>
+        <li><a href="faq.html" title="Frequently Asked Questions">FAQ</a></li>
+        <li><a href="contact.html" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+  <main>
+
+    <section class="hero-section">
+      <h2>Contact us</h2>
+      <div class="hero-question">
+        <p>How can we assist you today?</p>
+      </div>
+    </section>
+    
+    <p class="paragraph-intro">
+      Before getting in touch, make sure you check out our
+      <a href="faq.html" class="faq-link">Frequently Asked Questions</a>!
+    </p>
+
+    <!-- Section 1: Get in Touch -->
+    <section class="contact-intro">
+      <form class="contact-form" id="contactForm" method="get" action="contact-submission.html">
+        
+        <small>We're here to support you. Fill out the form below and a member of our team will respond within 24 hours.
+        </small>
+        
+        <fieldset class="form-item">
+          <legend>Type of Contact:</legend>
+          
+          <label><input type="radio" id="support" name="purpose" value="support" required> I am a client and need
+            support.</label>
+          <label><input type="radio" id="partner" name="purpose" value="partner"> I am a partner or interested in
+            partnering.</label>
+          <label><input type="radio" id="questionnaire" name="purpose" value="questionnaire"> I have a question about
+            the
+            questionnaire.</label>
+          <label><input type="radio" id="billing" name="purpose" value="billing"> I have a billing related
+            question.</label>
+          <label><input type="radio" id="press" name="purpose" value="press"> I have a press-related question.</label>
+          <label><input type="radio" id="business" name="purpose" value="business"> I have a business-related
+            inquiry.</label>
+          <label><input type="radio" id="organization" name="purpose" value="organization"> I'm interested in
+            Relationship
+            Battery for my group or organization.</label>
+    
+          <div class="form-item">
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+          </div>
+        </fieldset>
+    
+        <!-- CONTACT FIELDS -->
+        <fieldset class="form-item">
+          <legend>Contact Information:</legend>
+    
+          <div class="form-item">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+    
+    
+          <div class="form-item">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+    
+          <div class="form-item">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+    
+          <div class="form-item">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+    
+          <!-- CHECKBOX AGREEMENT -->
+          <div class="form-item checkbox-row">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">
+              By clicking “Submit” you agree to the processing of your personal information for the purpose of
+              responding to
+              this inquiry.
+            </label>
+          </div>
+    
+          <input type="submit" value="Get Help" class="submit-btn">
+      </form>
+    
+    </section>
+
+    <!-- Section 2: Support & FAQ -->
+    <section class="support-faq">
+      <div class="about-columns">
+        <div class="about-block">
+          <img src="images/customer.png" alt="" class="about-icon" width="44" height="44" loading="lazy">
+          <h2>Support</h2>
+          <ul class="about-values-list">
+            <li>
+              <span class="icon-container">
+                <img src="images/whatsapp.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Live Help:</strong> For immediate assistance, send a WhatsApp message to <a href="https://wa.me/2349012345678">+234 901 234 5678</a>
+              </span>
+            </li>
+            <li>
+              <span class="icon-container">
+                <img src="images/envelope-at.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Email Support:</strong> For email support, reach out to <a
+                  href="mailto:support@relationshipbattery.com">support@relationshipbattery.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="icon-container">
+                <img src="images/briefcase.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Business Inquiries:</strong> For business inquiries, contact <a
+                  href="mailto:business@relationshipbattery.com">business@relationshipbattery.com</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+    
+        <div class="about-block">
+          <img src="images/social-media.png" alt="" class="about-icon" width="44" height="44" loading="lazy">
+          <h2>Connect with Us</h2>
+          <ul class="about-values-list">
+            <li>
+              <span class="icon-container">
+                <img src="images/instagram.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Instagram:</strong> Follow us on <a href="https://instagram.com/relationshipbattery">Instagram</a> for updates and tips.
+              </span>
+            </li>
+            <li>
+              <span class="icon-container">
+                <img src="images/twitter-x.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Twitter:</strong> Follow us on <a href="https://twitter.com/relationshipbatt">Twitter</a> for updates and tips.
+              </span>
+            </li>
+            <li>
+              <span class="icon-container">
+                <img src="images/facebook.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>Facebook:</strong> Follow us on <a href="https://facebook.com/relationshipbattery">Facebook</a> for updates and tips.
+              </span>
+            </li>
+            <li>
+              <span class="icon-container">
+                <img src="images/youtube.svg" alt="" width="32" height="32" loading="lazy">
+              </span>
+              <span class="value-text">
+                <strong>YouTube:</strong> Follow us on <a href="https://youtube.com/relationshipbattery">YouTube</a> for updates
+                and tips.
+              </span>
+            </li>
+      </div>
+    </section>
+
+    <!-- Section 4: Social Media -->
+    <section class="social-media">
+      <h2>Our Office</h2>
+      <p class="paragraph-intro">
+        Relationship Battery is a fully online service registered in Nigeria. 
+        <br>We do not accept in-person visits or phone calls at our office. 
+        <br>All appointments are conducted online.
+      </p>
+     
+      <ul class="registered-address">
+        <li><strong>Registered Address:</strong></li>
+        <li>Relationship Battery</li>
+        <li>7 Akinsanya Street,</li>
+        <li>Off Ogunnusi Road,</li>
+        <li>Ojodu Berger, Lagos, Nigeria</li>
+      </ul>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Olaniyi Bello - Lagos, Nigeria.</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

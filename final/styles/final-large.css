@@ -1,0 +1,36 @@
+/* ========================================
+   ADDITIONAL LARGE SCREEN STYLES (64rem and above)
+   ======================================== */
+
+@media only screen and (min-width: 64rem) {
+
+    /* ========================================
+       MAIN LAYOUT
+       ======================================== */
+
+    .container {
+        max-width: 1400px;
+    }
+
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+
+    .navigation ul {
+        gap: 2rem;
+    }
+
+
+    /* ========================================
+       AWARDS SECTION
+       ======================================== */
+
+    .prize-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .winner-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

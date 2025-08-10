@@ -1,0 +1,64 @@
+[
+    {
+        "prizeName": "Best Graduating Student – Senior School (SS3)",
+        "objective": "To recognize and reward the best graduating students from both junior and senior schools, encouraging academic excellence and dedication.",
+        "criteria": [
+            "Must be the best graduating student from their respective school.",
+            "Open to both Junior School and Senior School."
+        ],
+        "categories": "RHS Alumni Excellence Award",
+        "nominationProcess": "Nominated by principal based on academic performance",
+        "inaugurated": 2024,
+        "recipient": "student",
+        "schoolLevel": "senior"
+    },
+    {
+        "prizeName": "Best in Literature-in-English – Patricia Chukwuma Award",
+        "objective": "To recognize and reward the best graduating students from Senior School, encouraging academic excellence and dedication.",
+        "criteria": [
+            "Must be the best graduating student from Senior School."
+        ],
+        "categories": "RHS Alumni Excellence Award",
+        "nominationProcess": "Selected based on outstanding performance in Literature-in-English",
+        "inaugurated": 2025,
+        "recipient": "student",
+        "schoolLevel": "senior"
+    },
+    {
+        "prizeName": "Best Graduating Student – Junior School (JSS3)",
+        "objective": "To recognize and reward the best graduating students from both junior and senior schools, encouraging academic excellence and dedication.",
+        "criteria": [
+            "Must be the best graduating student from their respective school.",
+            "Open to both Junior School and Senior School."
+        ],
+        "categories": "RHS Alumni Excellence Award",
+        "nominationProcess": "Nominated by principal based on academic performance",
+        "inaugurated": 2024,
+        "recipient": "student",
+        "schoolLevel": "junior"
+    },
+    {
+        "prizeName": "Male Teacher Legacy Award",
+        "objective": "To honor long-term contributions and impact on the RHS community, celebrating teachers who have dedicated a decade or more.",
+        "criteria": [
+            "Teachers must have spent at least 10 years teaching.",
+            "Priority for those who taught the 2007 set."
+        ],
+        "categories": "RHS Alumni Legacy Teaching Award",
+        "nominationProcess": "Selected by alumni vote",
+        "inaugurated": 2024,
+        "recipient": "teacher"
+    },
+    {
+        "prizeName": "Female Teacher Legacy Award",
+        "objective": "To honor long-term contributions and impact on the RHS community, celebrating teachers who have dedicated a decade or more.",
+        "criteria": [
+            "Teachers must have spent at least 10 years teaching.",
+            "Priority for those who taught the 2007 set."
+        ],
+        "categories": "RHS Alumni Legacy Teaching Award",
+        "nominationProcess": "Selected by alumni vote",
+        "inaugurated": 2024,
+        "recipient": "teacher"
+    }
+]

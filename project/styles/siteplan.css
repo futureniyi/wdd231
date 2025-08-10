@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary-color: #14447e;
-    --secondary-color: #048004;
+    --primary-color: #483D8B;
+    --secondary-color: #E6E6FA;
     --highlight-color: #98FB98;
     --text-color: #fff;
-    --border-color: #F4F4F4;
+    --border-color: #dddddd;
     --main-max-width: 960px;
     --primary-font: 'Montserrat', sans-serif;
     --body-font: 'Lato', sans-serif;
@@ -31,7 +31,7 @@ header {
 }
 
 h1 {
-    color: var(--border-color);
+    color: var(--secondary-color);
     font-size: 1.7rem;
     margin: 0 auto;
     padding: 1rem;
