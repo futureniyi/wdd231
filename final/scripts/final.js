@@ -1,7 +1,7 @@
 import { fetchJson } from './dataFetcher.js';
-import { renderPrizeCategories } from './prizeCategories.js';
-import { renderPrizeDetails } from './prizeDetails.js';
-import { renderPrizeWinners } from './prizeWinners.js';
+import { renderPrizeCategories } from './prize-categories.js';
+import { renderPrizeDetails } from './prize-details.js';
+import { renderPrizeWinners } from './prize-winners.js';
 import { setupFilterButtons } from './filters.js';
 
 import { loadDonors, setupFilters as setupDonorFilters } from './donors.js';
@@ -18,18 +18,18 @@ const donorFilterButtons = document.querySelectorAll('.donor-year-filter-btn');
 async function mainInit() {
     try {
         if (prizeCategoriesContainer) {
-            const prizeCategories = await fetchJson('data/prizeCategories.json');
+            const prizeCategories = await fetchJson('data/prize-categories.json');
             renderPrizeCategories(prizeCategories, prizeCategoriesContainer);
         }
 
         if (prizeDetailsContainer) {
-            const prizeDetails = await fetchJson('data/prizeDetails.json');
+            const prizeDetails = await fetchJson('data/prize-details.json');
             renderPrizeDetails(prizeDetails, prizeDetailsContainer);
             setupFilterButtons(prizeDetailsFilterButtons, prizeDetails, renderPrizeDetails, prizeDetailsContainer);
         }
 
         if (prizeWinnersContainer) {
-            const prizeWinners = await fetchJson('data/prizeWinners.json');
+            const prizeWinners = await fetchJson('data/prize-winners.json');
             renderPrizeWinners(prizeWinners, prizeWinnersContainer);
             setupFilterButtons(prizeWinnersFilterButtons, prizeWinners, renderPrizeWinners, prizeWinnersContainer);
         }
