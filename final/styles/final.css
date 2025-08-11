@@ -564,14 +564,6 @@ footer p {
     color: #444;
 }
 
-/* .contact-page-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-} */
-
 .contact-info h3 {
     text-align: center;
     color: var(--primary-color);
@@ -987,19 +979,6 @@ dialog p {
 /* ========================================
    QUOTES SECTION
    ======================================== */
-
-/* .quotes-sec {
-    padding: 2rem;
-    background-color: var(--first-row-color);
-    color: var(--text-color-dark);
-}
-
-.quotes-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-} */
 
 .quotes {
     text-align: center;
