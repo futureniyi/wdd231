@@ -2,12 +2,14 @@
    CSS RESET & ROOT VARIABLES
    ======================================== */
 
+/* Reset all elements margin, padding and use border-box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Define CSS custom properties (variables) for colors, fonts, sizing */
 :root {
     --primary-color: #14447e;
     --primary-color-dark: #2f3e8e;
@@ -24,6 +26,11 @@
     --serif-font: 'PT Serif', serif;
 }
 
+/* ========================================
+   BODY & LAYOUT
+   ======================================== */
+
+/* Base styles for body: grid layout rows, min height, font, colors */
 body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -33,12 +40,14 @@ body {
     color: var(--text-color-dark)
 }
 
+/* Container: centers content and restricts max width */
 .container {
     max-width: var(--main-max-width);
     margin: 0 auto;
     padding: 0 1rem;
 }
 
+/* Sections with background colors and padding */
 .section-primary {
     padding: 2rem;
     background-color: var(--primary-color);
@@ -54,6 +63,11 @@ body {
     background-color: var(--second-row-color);
 }
 
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+/* Large heading style with serif font and primary color */
 h1 {
     font-family: var(--serif-font);
     text-align: center;
@@ -63,6 +77,7 @@ h1 {
     padding: 1rem 0 0.5rem 0;
 }
 
+/* Medium heading style */
 h2 {
     font-family: var(--serif-font);
     text-align: center;
@@ -72,6 +87,7 @@ h2 {
     padding: 1rem 0 0.5rem 0;
 }
 
+/* Smaller heading style, left-aligned */
 h3 {
     font-family: var(--serif-font);
     text-align: left;
@@ -81,17 +97,23 @@ h3 {
     padding: 1rem 0 0.5rem 0;
 }
 
-/* NEW utility class replacing .h1-alt, .h2-alt, .h3-alt */
+/* Utility class for light-colored text */
 .text-light {
     color: var(--text-color);
 }
 
+/* ========================================
+   LISTS & LINKS
+   ======================================== */
+
+/* Decimal list style with vertical padding */
 li {
     list-style: decimal;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
+/* Links styled with highlight color and smooth transition */
 a {
     text-decoration: none;
     color: var(--highlight-color);
@@ -99,20 +121,30 @@ a {
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
+/* Link hover and active states: desaturate and underline */
 a:hover,
 a:active {
     filter: saturate(50%);
     text-decoration: underline;
 }
 
-img:hover {
-    filter: saturate(50%);
-}
+/* ========================================
+   IMAGES & BUTTONS
+   ======================================== */
 
+/* Saturate filter on hover for images and buttons */
+img:hover,
+.spotlight-image:hover,
+.winner-photo:hover,
 button:hover {
     filter: saturate(50%);
 }
 
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+
+/* Header grid layout: logo - title - hamburger */
 .main-header {
     display: grid;
     grid-template-columns: 55px auto 55px;
@@ -122,12 +154,14 @@ button:hover {
     padding: 0.5rem 1rem;
 }
 
+/* Logo image styles */
 .main-header img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+/* Site title styling */
 .site-title {
     font-size: 1.2rem;
     color: var(--text-color);
@@ -136,6 +170,7 @@ button:hover {
     text-align: center;
 }
 
+/* Hamburger menu button styling */
 .hamburger {
     background: none;
     border: none;
@@ -145,37 +180,47 @@ button:hover {
     font-size: 2rem;
 }
 
+/* Hamburger hover color */
 .hamburger:hover {
     color: var(--highlight-color);
 }
 
+/* Hamburger icon before content */
 .hamburger::before {
     content: "\2630";
+    /* hamburger bars */
 }
 
+/* Hamburger icon when shown as close */
 .hamburger.show::before {
     content: "\00D7";
+    /* X icon */
 }
 
+/* Navigation button margin */
 #nav-button {
     margin: 0 2px;
 }
 
+/* Navigation menu - default hidden */
 .navigation {
     display: none;
     margin-bottom: 10px;
 }
 
+/* Navigation menu - visible when toggled */
 .navigation.show {
     display: block;
 }
 
+/* Navigation list style reset */
 .navigation li {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* Navigation links style */
 .navigation a {
     display: block;
     padding: 0.8rem 10px;
@@ -183,15 +228,22 @@ button:hover {
     text-decoration: none;
 }
 
+/* Navigation link hover */
 .navigation a:hover {
     color: var(--highlight-color);
 }
 
+/* Current active navigation link */
 .navigation li.current a {
     color: var(--highlight-color);
     font-weight: bold;
 }
 
+/* ========================================
+   FOOTER
+   ======================================== */
+
+/* Footer container styles */
 footer {
     display: flex;
     flex-direction: column;
@@ -202,15 +254,18 @@ footer {
     margin: 0 1rem;
 }
 
+/* Paragraph spacing in footer */
 footer p {
     margin: 0.5rem 0;
 }
 
+/* Last modified text */
 #lastModified {
     color: var(--highlight-color);
     font-weight: bold;
 }
 
+/* Footer address styles */
 .footer-address {
     display: flex;
     flex-direction: column;
@@ -219,6 +274,7 @@ footer p {
     color: var(--text-color);
 }
 
+/* Social media container */
 .social {
     display: flex;
     justify-content: center;
@@ -226,6 +282,7 @@ footer p {
     margin: 1rem 0;
 }
 
+/* Social media link styles */
 .social a {
     display: flex;
     border: 1px solid #ccc;
@@ -237,15 +294,22 @@ footer p {
     background-color: #ccc;
 }
 
+/* Social media icon sizes */
 .social img {
     width: 24px;
     height: 24px;
 }
 
+/* Social media hover background */
 .social a:hover {
     background-color: var(--highlight-color);
 }
 
+/* ========================================
+   ACCESSIBILITY FOCUS STATES
+   ======================================== */
+
+/* Focus outlines for navigation and toggles */
 .navigation a:focus,
 #theme-toggle:focus,
 #nav-button:focus {
@@ -253,6 +317,7 @@ footer p {
     outline-offset: 2px;
 }
 
+/* Skip to main content link - hidden off screen */
 .skip-link {
     position: absolute;
     left: -999px;
@@ -268,6 +333,7 @@ footer p {
     border-radius: 4px;
 }
 
+/* Skip link visible when focused */
 .skip-link:focus {
     left: 6px;
     top: 6px;
@@ -276,15 +342,26 @@ footer p {
     overflow: visible;
 }
 
+/* ========================================
+   PAGE HEADING STYLES
+   ======================================== */
+
+/* Section heading background and text color */
 .page-heading {
     color: var(--highlight-color);
     background-color: #f4f3f3;
 }
 
+/* Page heading main title color */
 .page-heading h1 {
     color: var(--primary-color);
 }
 
+/* ========================================
+   HOME HERO SECTION
+   ======================================== */
+
+/* Hero background and text styling */
 .home-hero {
     background: var(--primary-color);
     padding: 2rem 1rem;
@@ -293,6 +370,7 @@ footer p {
     margin: 0 1rem;
 }
 
+/* Hero layout using grid areas */
 .hero-columns {
     display: grid;
     grid-template-areas:
@@ -302,26 +380,31 @@ footer p {
         "button";
 }
 
+/* Hero title styling */
 .home-hero-title {
     grid-area: title;
     color: var(--highlight-color);
 }
 
+/* Hero image styling */
 .hero-image {
     grid-area: image;
     width: 100%;
     height: auto;
 }
 
+/* Hero image hover effect */
 .hero-image:hover {
     filter: saturate(50%);
 }
 
+/* Hero text area */
 .hero-text {
     grid-area: text;
     text-align: left;
 }
 
+/* Hero call-to-action button */
 #home-hero-cta {
     grid-area: button;
     display: inline-block;
@@ -336,18 +419,25 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
+/* Hero CTA hover effect */
 #home-hero-cta:hover {
     background-color: white;
     color: var(--primary-color);
     filter: saturate(50%);
 }
 
+/* ========================================
+   SPOTLIGHT CARDS
+   ======================================== */
+
+/* Grid container for spotlight cards */
 .spotlight-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Individual spotlight card layout and styles */
 .spotlight-card {
     display: grid;
     grid-template-areas:
@@ -363,25 +453,25 @@ footer p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Spotlight card hover shadow */
 .spotlight-card:hover {
     box-shadow: 0 0 50px #333;
 }
 
+/* Spotlight image container */
 .spotlight-image {
     grid-area: image;
     text-align: center;
 }
 
+/* Spotlight image styles */
 .spotlight-image img {
     width: 100%;
     height: auto;
     border-radius: 0.3rem;
 }
 
-.spotlight-image:hover {
-    filter: saturate(50%);
-}
-
+/* Spotlight title */
 .spotlight-title {
     grid-area: title;
     font-size: 1.2rem;
@@ -390,6 +480,7 @@ footer p {
     text-align: left;
 }
 
+/* Spotlight text content */
 .spotlight-text {
     grid-area: text;
     font-size: 0.95rem;
@@ -397,6 +488,11 @@ footer p {
     line-height: 1.4;
 }
 
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+/* Base button styling */
 .btn {
     grid-area: button;
     align-self: start;
@@ -411,16 +507,23 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 .btn:hover {
     color: var(--highlight-color);
     text-decoration: none;
 }
 
+/* ========================================
+   PRIZES, FAQ, FORM, AND OTHER SECTIONS
+   ======================================== */
+
+/* Prize section container */
 .prize-section {
     padding: 2rem;
     background-color: var(--second-row-color);
 }
 
+/* Prize heading */
 .prize-heading {
     text-align: center;
     color: var(--primary-color);
@@ -428,18 +531,21 @@ footer p {
     margin-bottom: 1.5rem;
 }
 
+/* Prize cards container */
 .prize-cards {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr;
 }
 
+/* Prize category cards container */
 .prize-category {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Individual prize card styles */
 .prize-card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -450,10 +556,12 @@ footer p {
     color: var(--text-color-dark);
 }
 
+/* Prize card hover shadow */
 .prize-card:hover {
     box-shadow: 0 0 50px #333;
 }
 
+/* Prize card heading */
 .prize-card h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -461,17 +569,20 @@ footer p {
     text-align: left;
 }
 
+/* Prize card list */
 .prize-card ul {
     padding-left: 1.2rem;
     margin-top: 0.3rem;
 }
 
+/* FAQ list */
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
     color: var(--text-color);
 }
 
+/* Individual FAQ item */
 .faq-item {
     margin-bottom: 1rem;
     border: 1px solid #ddd;
@@ -479,33 +590,40 @@ footer p {
     border-radius: 5px;
 }
 
+/* FAQ summary style */
 .faq-item summary {
     font-weight: bold;
     cursor: pointer;
 }
 
+/* FAQ paragraph spacing */
 .faq-item p {
     margin-top: 0.5rem;
 }
 
+/* FAQ links */
 .faq-item a {
     color: var(--highlight-color);
 }
 
+/* FAQ link hover */
 .faq-item a:hover {
     color: var(--text-color);
 }
 
+/* Form page container */
 .form-page {
     padding: 2rem 1rem;
     background-color: #f4f8ff;
     margin: 0 auto;
 }
 
+/* Contact info container */
 .contact-info {
     color: #444;
 }
 
+/* Contact info heading */
 .contact-info h3 {
     text-align: center;
     color: var(--primary-color);
@@ -513,25 +631,30 @@ footer p {
     text-align: left;
 }
 
+/* Contact info paragraph */
 .contact-info p {
     color: #444;
 }
 
+/* Contact links */
 .contact-info a {
     color: var(--primary-color);
 }
 
+/* Contact links hover */
 .contact-info a:hover {
     color: var(--primary-color-dark);
     text-decoration: underline;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
+/* Form styling */
 form {
     margin: 0 2%;
     align-items: center;
 }
 
+/* Labels */
 label {
     display: block;
     font-size: 1rem;
@@ -539,6 +662,7 @@ label {
     padding-top: .2rem;
 }
 
+/* Inputs and selects */
 input[type=text],
 input[type=tel],
 input[type=date],
@@ -557,16 +681,19 @@ select {
     width: 280px;
 }
 
+/* Textarea minimum height */
 textarea {
     min-height: 100px;
 }
 
+/* Required fields have red left border */
 input:required,
 select:required,
 textarea:required {
     border-left-color: #d70000;
 }
 
+/* Focus styles */
 input:focus,
 select:focus,
 textarea:focus {
@@ -574,12 +701,14 @@ textarea:focus {
     outline: none;
 }
 
+/* Valid required fields have green left border */
 input:required:valid,
 select:required:valid,
 textarea:required:valid {
     border-left-color: green;
 }
 
+/* Submit button */
 input[type=submit] {
     border: none;
     text-align: center;
@@ -593,39 +722,46 @@ input[type=submit] {
     appearance: none;
 }
 
+/* Submit button hover */
 input[type=submit]:hover {
     filter: saturate(50%);
 }
 
+/* Thanks section styling */
 #thanks {
     padding: 2rem 1rem;
     background-color: var(--first-row-color);
 }
 
+/* Thanks header */
 .thanks-h2 {
     color: var(--primary-color);
     text-align: left;
     font-size: 1.5rem;
 }
 
+/* Results section */
 #results {
     color: black;
     margin: 0;
     text-align: left;
 }
 
+/* Results header */
 #results h3 {
     color: var(--secondary-color);
     margin: 0;
     text-align: left;
 }
 
+/* Results strong text */
 #results strong {
     color: var(--primary-color);
     margin: 0;
     text-align: left;
 }
 
+/* Visit section */
 .visit-sec {
     display: flex;
     justify-self: left;
@@ -633,13 +769,14 @@ input[type=submit]:hover {
     margin: 0 auto;
 }
 
+/* Visit message box */
 .visit-message {
     background-color: red;
-    color: var(--text-color-dark);
     color: var(--text-color);
     padding: 0.5rem;
 }
 
+/* Filter button groups */
 .prize-filter-buttons,
 .winner-filter-buttons {
     display: flex;
@@ -650,6 +787,7 @@ input[type=submit]:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Filter button base */
 .filter-btn {
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -663,17 +801,20 @@ input[type=submit]:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Filter button hover */
 .filter-btn:hover {
     background-color: var(--text-color);
     filter: saturate(50%);
 }
 
+/* Filter button active state */
 .filter-btn.active {
     background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
 }
 
+/* Winner cards grid */
 .winner-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -681,6 +822,7 @@ input[type=submit]:hover {
     padding: 1rem;
 }
 
+/* Individual winner card */
 .winner-card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -692,10 +834,12 @@ input[type=submit]:hover {
     text-align: left;
 }
 
+/* Winner card hover effect */
 .winner-card:hover {
     box-shadow: 0 0 50px #333;
 }
 
+/* Winner photo */
 .winner-photo {
     width: 100%;
     height: auto;
@@ -704,10 +848,7 @@ input[type=submit]:hover {
     object-fit: cover;
 }
 
-.winner-photo:hover {
-    filter: saturate(50%);
-}
-
+/* Winner name */
 .winner-name {
     font-size: 1.3rem;
     font-weight: 700;
@@ -716,6 +857,7 @@ input[type=submit]:hover {
     color: var(--primary-color);
 }
 
+/* Winner award and year */
 .winner-award,
 .award-year {
     font-size: 1rem;
@@ -723,6 +865,7 @@ input[type=submit]:hover {
     margin-bottom: 0.8rem;
 }
 
+/* Prize details title and nomination */
 .prize-details-title,
 .winner-nomination {
     margin-top: 0.8rem;
@@ -730,6 +873,7 @@ input[type=submit]:hover {
     color: var(--text-color-dark);
 }
 
+/* Prize details list */
 .prize-details-list {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -740,6 +884,7 @@ input[type=submit]:hover {
     max-width: 280px;
 }
 
+/* Donation steps container with responsive grid */
 .donation-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -748,26 +893,31 @@ input[type=submit]:hover {
     color: var(--text-color-dark);
 }
 
+/* Donation step paragraphs */
 .donation-steps p {
     text-align: left;
     color: var(--text-color-dark);
     margin-bottom: 8px;
 }
 
+/* Donation step links */
 .donation-steps a {
     color: var(--primary-color-dark);
 }
 
+/* Donation step links hover */
 .donation-steps a:hover {
     text-decoration: underline;
 }
 
+/* Donation step list items */
 .donation-steps li {
     text-align: left;
     color: var(--text-color-dark);
     list-style: none;
 }
 
+/* Individual donation step card */
 .donation-step-card {
     background-color: white;
     border: 1px solid var(--primary-color-light);
@@ -776,23 +926,27 @@ input[type=submit]:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Donation step card headings */
 .donation-step-card h3 {
     margin-top: 0;
     color: var(--primary-color);
 }
 
+/* Donors list */
 .donors-list {
     list-style: none;
     padding-left: 0;
     margin-top: 1rem;
 }
 
+/* Donors container paragraphs */
 .donors-con p {
     color: var(--text-color-dark);
     margin-bottom: 1rem;
     text-align: center;
 }
 
+/* Donors list items */
 .donors-list li {
     font-weight: 600;
     color: var(--primary-color-dark);
@@ -800,11 +954,13 @@ input[type=submit]:hover {
     border-bottom: 1px solid #ddd;
 }
 
+/* Donor year filters container */
 .donor-year-filters {
     text-align: center;
     margin-bottom: 1rem;
 }
 
+/* Donor year filter buttons */
 .donor-year-filter-btn {
     padding: 0.5rem 1rem;
     margin: 0 0.25rem;
@@ -817,28 +973,37 @@ input[type=submit]:hover {
     font-weight: 600;
 }
 
+/* Donor year filter button hover */
 .donor-year-filter-btn:hover {
     background-color: var(--primary-color-light);
     filter: saturate(50%);
 }
 
+/* Donor year filter button active */
 .donor-year-filter-btn.active {
     background-color: var(--primary-color);
     color: white;
 }
 
+/* Wall of fame list items */
 .wall-of-fame-list li {
     font-weight: 600;
     color: var(--primary-color-dark);
     list-style: none;
 }
 
+/* Wall of fame container paragraphs */
 .wall-of-fame-con p {
     color: var(--text-color-dark);
     margin-bottom: 1rem;
     text-align: center;
 }
 
+/* ========================================
+   MODALS / DIALOGS
+   ======================================== */
+
+/* Dialog box styling */
 dialog {
     width: 90%;
     max-width: 400px;
@@ -851,10 +1016,12 @@ dialog {
     margin: 0 auto;
 }
 
+/* Backdrop for modal dialogs */
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
 }
 
+/* Modal header */
 .mod-header {
     display: grid;
     grid-template-columns: auto 44px;
@@ -867,18 +1034,21 @@ dialog {
     font-family: var(--serif-font);
 }
 
+/* Modal title */
 dialog h3 {
     font-size: 1.2rem;
     color: var(--text-color);
     border: 1px solid #222;
 }
 
+/* Modal close button */
 dialog .close-btn {
     background: white;
     padding: 1rem 0;
     border: 1px solid #222;
 }
 
+/* Modal list items */
 dialog li {
     font-size: 1rem;
     margin: 0 2rem;
@@ -886,6 +1056,7 @@ dialog li {
     list-style: circle;
 }
 
+/* Modal paragraphs */
 dialog p {
     font-size: 1rem;
     margin: 1rem;
@@ -893,6 +1064,11 @@ dialog p {
     list-style: none;
 }
 
+/* ========================================
+   MISCELLANEOUS
+   ======================================== */
+
+/* Quotes section text alignment */
 .quotes {
     text-align: center;
 }
