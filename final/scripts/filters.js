@@ -28,13 +28,6 @@ export function applyFilter(data, filterValue) {
     });
 }
 
-/**
- * Sets up event listeners on filter buttons to filter and render data.
- * @param {NodeListOf<HTMLButtonElement>} buttons - Filter buttons.
- * @param {Array} data - Full data array to filter.
- * @param {Function} renderFn - Function to render filtered data.
- * @param {HTMLElement} container - Container where rendering occurs.
- */
 export function setupFilterButtons(buttons, data, renderFn, container) {
     buttons.forEach(button => {
         button.addEventListener('click', () => {

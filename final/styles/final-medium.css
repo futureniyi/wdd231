@@ -71,6 +71,7 @@
     .contact-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 8px;
     }
 
     .contact-info {

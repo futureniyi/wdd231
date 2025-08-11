@@ -30,265 +30,269 @@
 </head>
 
 <body>
-    <div class="site-wrapper">
-        <a href="#main-content" class="skip-link">Skip to main content</a>
-        <header>
-            <div class="container header-container">
-                <div class="main-header">
-                    <img src="images/rhs-logo.webp" alt="LCCI Logo" width="44" height="44">
-                    <h1 class="site-title" id="site-title">Site Title</h1>
-                    <button id="nav-button" type="button" class="hamburger" aria-label="Toggle menu"></button>
-                </div>
-        
-                <nav id="nav-bar" class="navigation" aria-label="Primary navigation">
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="awards.html">Awards</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="container header-container">
+            <div class="main-header">
+                <img src="images/rhs-logo.webp" alt="RHS 2007 Alumni Logo" width="44" height="44">
+                <h1 class="site-title" id="site-title">Site Title</h1>
+                <button id="nav-button" type="button" class="hamburger" aria-label="Toggle menu"></button>
             </div>
-        </header>
+    
+            <nav id="nav-bar" class="navigation" aria-label="Primary navigation">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-        <main id="main-content">
+    <main id="main-content">
 
-            <div class="home-hero">
-                <div class="container">
-                    <div class="hero-columns">
-                        <h2 class="home-hero-title">Paying It Back, Building the Future</h2>
-                        <p class="hero-text">
-                            As proud alumni, we’re giving back to honor the teachers who shaped us and the students who
-                            follow in our footsteps.
-                            Your donation supports annual prizes that celebrate excellence, service, and the legacy of
-                            our shared journey.
+        <div class="page-heading">
+            <div class="container">
+                <h1>Home</h1>
+            </div>
+        </div>
+
+        <div class="home-hero">
+            <div class="container">
+                <div class="hero-columns">
+                    <h2 class="home-hero-title">Paying It Back, Building the Future</h2>
+                    <p class="hero-text">
+                        As proud alumni, we’re giving back to honor the teachers who shaped us and the students who
+                        follow in our footsteps.
+                        Your donation supports annual prizes that celebrate excellence, service, and the legacy of
+                        our shared journey.
+                    </p>
+                    <a id="home-hero-cta" href="donate.html" role="button"
+                        target="_blank" rel="noopener">Donate Now</a>
+                    <div class="hero-image">
+                        <img src="images/donate.svg"
+                            alt="Alumni giving back to students and teachers" width="300" height="200"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-one">
+            <div class="container">
+                <h2>Spotlight</h2>
+                <div class="spotlight-grid">
+
+                    <div class="spotlight-card">
+                        <div class="spotlight-image">
+                            <img src="images/2025-award-spotlight.webp" alt="Prize Ceremony">
+                        </div>
+                        <div>
+                            <h3 class="spotlight-title font-primary text-primary">2025 Prize Ceremony Highlights</h3>
+
+                            <p class="spotlight-text">A day of excellence and gratitude as students and teachers
+                                received awards from the alumni community.</p>
+                            <button id="modal-news-1-btn" class="btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="spotlight-image">
+                            <img src="images/birthday-spotlight.webp" alt="Birthday Celebrations">
+                        </div>
+                        <div>
+                            <h3 class="spotlight-title font-primary text-primary">July Birthday Shoutouts</h3>
+                            <p class="spotlight-text">We celebrated our amazing alumni born in July with personal
+                                messages and spotlight stories.</p>
+                            <button id="modal-news-2-btn" class="btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="spotlight-image">
+                            <img src="images/startup-spotlight.webp" alt="Achievement Feature">
+                        </div>
+                        <div>
+                            <h3 class="spotlight-title font-primary text-primary">Alumni Achievement: Tolu's Startup</h3>
+                            <p class="spotlight-text">See how Tolu turned a class project into a tech startup
+                                helping local schools.</p>
+                            <button id="modal-news-3-btn" class="btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Dialogs -->
+                    
+                    <dialog id="modal-news-1">
+                        <div class="mod-header">
+                            <h3 id="title-news-1">2025 Prize Ceremony Highlights</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <div id="desc-news-1">
+                            <p>The 2025 Prize Ceremony was a memorable day filled with joy and pride as our best graduating students and
+                                dedicated teachers were honored by the RHS 007 Alumni community.</p>
+                            <p>Students across Junior and Senior schools were recognized for academic excellence, leadership, and
+                                community service. Our teacher legacy awards celebrated those who have dedicated over a decade to
+                                shaping young minds.</p>
+                            <p>The ceremony featured speeches from distinguished alumni and heartfelt gratitude from award recipients,
+                                fostering inspiration for future generations.</p>
+                            <p><strong>Highlights included:</strong></p>
+                            <ul>
+                                <li>Presentation of cash prizes, plaques, and books selected by the alumni.</li>
+                                <li>Special performance by the school choir.</li>
+                                <li>Networking session with alumni and community leaders.</li>
+                            </ul>
+                            <p>We thank all contributors and look forward to next year’s event!</p>
+                        </div>
+                    </dialog>
+                    
+                    <dialog id="modal-news-2">
+                        <div class="mod-header">
+                            <h3 id="title-news-2">Birthday Celebrations</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <div id="desc-news-2">
+                            <p>In July, we celebrated the birthdays of our wonderful RHS 007 alumni community members. This month’s
+                                birthday shoutouts included personalized messages, spotlight stories, and a special digital card shared
+                                across social media.</p>
+                            <p>We highlighted the achievements and milestones of those born in July and encouraged everyone to connect
+                                and celebrate together.</p>
+                            <p>Thank you for being part of this vibrant community! Keep an eye on our socials for upcoming birthday
+                                celebrations and opportunities to participate.</p>
+                        </div>
+                    </dialog>
+                    
+                    <dialog id="modal-news-3">
+                        <div class="mod-header">
+                            <h3 id="title-news-3">Achievement Feature</h3>
+                            <button class="close-btn">❌</button>
+                        </div>
+                        <div id="desc-news-3">
+                            <p>Alumni Tolu’s journey from a class project to a thriving tech startup is truly inspiring. The startup now
+                                supports local schools by providing innovative educational technology solutions tailored to their needs.
+                            </p>
+                            <p>With the help of fellow alumni and community support, Tolu’s company has expanded its reach, impacting
+                                hundreds of students and teachers across the region.</p>
+                            <p>We’re proud to feature this achievement and look forward to many more success stories from our RHS 007
+                                alumni network.</p>
+                            <p>Read more about Tolu’s inspiring story and how you can get involved on our website and social channels.
+                            </p>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div id="prize-highlights" class="section-two">
+            <div class="container">
+                <h2>Annual Prize Categories</h2>
+                <div id="prize-list" class="prize-category"></div>
+                <a href="awards.html" class="btn" role="button">Explore All Prize Categories</a>
+            </div>
+        </div>
+
+        <div class="section-primary">
+            <div class="container">
+                <h2 class="h2-alt">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>What is the RHS 2007 Alumni Bond Set?</summary>
+                        <p>
+                            The RHS 2007 Alumni Bond Set is the official graduating class of Redeemer's High School Senior Secondary School,
+                            class of 2007.
+                            We foster lifelong connections, support our alma mater, and celebrate excellence through community service and
+                            annual awards.
                         </p>
-                        <a id="home-hero-cta" href="donate.html" role="button"
-                            target="_blank" rel="noopener">Donate Now</a>
-                        <div class="hero-image">
-                            <img src="images/donate.svg"
-                                alt="Alumni giving back to students and teachers" width="300" height="200"
-                                loading="lazy">
-                        </div>
-                    </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>How can I support RHS 2007 Alumni initiatives?</summary>
+                        <p>
+                            You can support us by donating to the dedicated bank account listed on our <a href="donate.html">Donate page</a>
+                            and emailing your transaction receipt to
+                            <a href="mailto:donations@rhs007.com.ng">donations@rhs007.com.ng</a>.
+                            After confirmation, you will receive a unique donation code to appear on the public donor list.
+                        </p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Who selects the award winners?</summary>
+                        <p>
+                            Student award winners are nominated by school principals based on academic performance. Teacher awards are
+                            selected through alumni voting and verified by the organizing committee.
+                            Visit the <a href="awards.html">Awards page</a> for more details.
+                        </p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Can I donate anonymously?</summary>
+                        <p>
+                            Yes, you may choose to donate anonymously or request that your name not appear on the public donor list.
+                            Learn more on our <a href="donate.html">Donate page</a>.
+                        </p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>How can I contact the RHS 2007 Alumni Committee?</summary>
+                        <p>
+                            You can email us at <a href="mailto:hello@rhs007.com.ng">hello@rhs007.com.ng</a> or use the contact form on our
+                            <a href="contact.html">Contact page</a>.
+                        </p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Where is the RHS 2007 Alumni Committee located?</summary>
+                        <p>
+                            The committee is based at Redeemer's High School, Redemption Camp, Ogun State, Nigeria.
+                        </p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>How are award winners recognized?</summary>
+                        <p>
+                            Winners receive cash prizes, certificates, books, and plaques to celebrate academic excellence and dedicated
+                            service.
+                            See examples on the <a href="awards.html">Awards page</a>.
+                        </p>
+                    </details>
+
+                    <p><a href="contact.html#faq">See all frequently asked questions</a></p>
                 </div>
             </div>
+        </div>
 
-            <div class="spotlight">
-                <div class="container">
-                    <h2 class="spotlight-heading">Spotlight Highlights</h2>
-                    <div class="spotlight-grid">
+            <div class="section-one">
+            <div class="container">
+                <h2>Wise Words</h2>
+                <div id="quotes" class="quotes"></div>
+            </div>
+        </div>
 
-                        <div class="spotlight-card">
-                            <div class="spotlight-image">
-                                <img src="images/2025-award-spotlight.webp" alt="Prize Ceremony">
-                            </div>
-                            <div>
-                                <h3 class="spotlight-title">2025 Prize Ceremony Highlights</h3>
-                                <p class="spotlight-text">A day of excellence and gratitude as students and teachers
-                                    received awards from the alumni community.</p>
-                                <button id="modal-news-1-btn" class="spotlight-button">Read More</button>
-                            </div>
-                        </div>
+    </main>
 
-                        <div class="spotlight-card">
-                            <div class="spotlight-image">
-                                <img src="images/birthday-spotlight.webp" alt="Birthday Celebrations">
-                            </div>
-                            <div>
-                                <h3 class="spotlight-title">July Birthday Shoutouts</h3>
-                                <p class="spotlight-text">We celebrated our amazing alumni born in July with personal
-                                    messages and spotlight stories.</p>
-                                <button id="modal-news-2-btn" class="spotlight-button">Read More</button>
-                            </div>
-                        </div>
+    <footer>
+        <div class="main-footer">
+            <div class="footer-address">
+                <p>&copy; <span id="currentyear"></span> <span id="site-owner">Site Title</span></p>
 
-                        <div class="spotlight-card">
-                            <div class="spotlight-image">
-                                <img src="images/startup-spotlight.webp" alt="Achievement Feature">
-                            </div>
-                            <div>
-                                <h3 class="spotlight-title">Alumni Achievement: Tolu's Startup</h3>
-                                <p class="spotlight-text">See how Tolu turned a class project into a tech startup
-                                    helping local schools.</p>
-                                <button id="modal-news-3-btn" class="spotlight-button">Read More</button>
-                            </div>
-                        </div>
-
-                        <!-- Detailed Dialogs -->
-                        
-                        <dialog id="modal-news-1">
-                            <div class="mod-header">
-                                <h3 id="title-news-1">2025 Prize Ceremony Highlights</h3>
-                                <button class="close-btn">❌</button>
-                            </div>
-                            <div id="desc-news-1">
-                                <p>The 2025 Prize Ceremony was a memorable day filled with joy and pride as our best graduating students and
-                                    dedicated teachers were honored by the RHS 007 Alumni community.</p>
-                                <p>Students across Junior and Senior schools were recognized for academic excellence, leadership, and
-                                    community service. Our teacher legacy awards celebrated those who have dedicated over a decade to
-                                    shaping young minds.</p>
-                                <p>The ceremony featured speeches from distinguished alumni and heartfelt gratitude from award recipients,
-                                    fostering inspiration for future generations.</p>
-                                <p><strong>Highlights included:</strong></p>
-                                <ul>
-                                    <li>Presentation of cash prizes, plaques, and books selected by the alumni.</li>
-                                    <li>Special performance by the school choir.</li>
-                                    <li>Networking session with alumni and community leaders.</li>
-                                </ul>
-                                <p>We thank all contributors and look forward to next year’s event!</p>
-                            </div>
-                        </dialog>
-                        
-                        <dialog id="modal-news-2">
-                            <div class="mod-header">
-                                <h3 id="title-news-2">Birthday Celebrations</h3>
-                                <button class="close-btn">❌</button>
-                            </div>
-                            <div id="desc-news-2">
-                                <p>In July, we celebrated the birthdays of our wonderful RHS 007 alumni community members. This month’s
-                                    birthday shoutouts included personalized messages, spotlight stories, and a special digital card shared
-                                    across social media.</p>
-                                <p>We highlighted the achievements and milestones of those born in July and encouraged everyone to connect
-                                    and celebrate together.</p>
-                                <p>Thank you for being part of this vibrant community! Keep an eye on our socials for upcoming birthday
-                                    celebrations and opportunities to participate.</p>
-                            </div>
-                        </dialog>
-                        
-                        <dialog id="modal-news-3">
-                            <div class="mod-header">
-                                <h3 id="title-news-3">Achievement Feature</h3>
-                                <button class="close-btn">❌</button>
-                            </div>
-                            <div id="desc-news-3">
-                                <p>Alumni Tolu’s journey from a class project to a thriving tech startup is truly inspiring. The startup now
-                                    supports local schools by providing innovative educational technology solutions tailored to their needs.
-                                </p>
-                                <p>With the help of fellow alumni and community support, Tolu’s company has expanded its reach, impacting
-                                    hundreds of students and teachers across the region.</p>
-                                <p>We’re proud to feature this achievement and look forward to many more success stories from our RHS 007
-                                    alumni network.</p>
-                                <p>Read more about Tolu’s inspiring story and how you can get involved on our website and social channels.
-                                </p>
-                            </div>
-                        </dialog>
-                    </div>
-                </div>
             </div>
 
-            <div id="prize-highlights" class="prize-section">
-                <div class="container">
-                    <h2 class="prize-heading">Annual Prize Categories</h2>
-                    <div id="prize-list" class="prize-category"></div>
-                    <a href="awards.html" class="prize-button" role="button">Explore All Prize Categories</a>
-                </div>
+            <div class="social">
+                <a href="https://github.com/futureniyi" target="_blank"><img src="images/github.svg"
+                        alt="GitHub Icon" width="48" height="48"></a>
+                <a href="https://www.linkedin.com/in/olaniyi-bello-57067a104/" target="_blank"><img
+                        src="images/linkedin.svg" alt="LinkedIn" width="48" height="48"></a>
+                <a href="https://www.facebook.com/futureniyi" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook" width="48" height="48"></a>
+                <a href="https://x.com/hiniyi" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X"
+                        width="48" height="48"></a>
             </div>
-
-            <div class="faq">
-                <div class="container">
-                    <h2>Frequently Asked Questions</h2>
-                    <div class="faq-list">
-                        <details class="faq-item">
-                            <summary>What is the RHS 2007 Alumni Bond Set?</summary>
-                            <p>
-                                The RHS 2007 Alumni Bond Set is the official graduating class of Redeemer's High School Senior Secondary School,
-                                class of 2007.
-                                We foster lifelong connections, support our alma mater, and celebrate excellence through community service and
-                                annual awards.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>How can I support RHS 2007 Alumni initiatives?</summary>
-                            <p>
-                                You can support us by donating to the dedicated bank account listed on our <a href="donate.html">Donate page</a>
-                                and emailing your transaction receipt to
-                                <a href="mailto:donations@rhs007.com.ng">donations@rhs007.com.ng</a>.
-                                After confirmation, you will receive a unique donation code to appear on the public donor list.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>Who selects the award winners?</summary>
-                            <p>
-                                Student award winners are nominated by school principals based on academic performance. Teacher awards are
-                                selected through alumni voting and verified by the organizing committee.
-                                Visit the <a href="awards.html">Awards page</a> for more details.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>Can I donate anonymously?</summary>
-                            <p>
-                                Yes, you may choose to donate anonymously or request that your name not appear on the public donor list.
-                                Learn more on our <a href="donate.html">Donate page</a>.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>How can I contact the RHS 2007 Alumni Committee?</summary>
-                            <p>
-                                You can email us at <a href="mailto:hello@rhs007.com.ng">hello@rhs007.com.ng</a> or use the contact form on our
-                                <a href="contact.html">Contact page</a>.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>Where is the RHS 2007 Alumni Committee located?</summary>
-                            <p>
-                                The committee is based at Redeemer's High School, Redemption Camp, Ogun State, Nigeria.
-                            </p>
-                        </details>
-                        
-                        <details class="faq-item">
-                            <summary>How are award winners recognized?</summary>
-                            <p>
-                                Winners receive cash prizes, certificates, books, and plaques to celebrate academic excellence and dedicated
-                                service.
-                                See examples on the <a href="awards.html">Awards page</a>.
-                            </p>
-                        </details>
-
-                        <p><a href="contact.html#faq">See all frequently asked questions</a></p>
-                    </div>
-                </div>
-            </div>
-
-             <div class="quotes-sec">
-                <div class="container">
-                    <h2 class="quotes-heading"> Wise Words </h2>
-                    <div id="quotes" class="quotes"></div>
-                </div>
-            </div>
-
-        </main>
-
-        <footer>
-            <div class="main-footer">
-                <div class="footer-address">
-                    <p>&copy; <span id="currentyear"></span> <span id="site-owner">Site Title</span></p>
-
-                </div>
-
-                <div class="social">
-                    <a href="https://github.com/futureniyi" target="_blank"><img src="images/github.svg"
-                            alt="GitHub Icon" width="48" height="48"></a>
-                    <a href="https://www.linkedin.com/in/olaniyi-bello-57067a104/" target="_blank"><img
-                            src="images/linkedin.svg" alt="LinkedIn" width="48" height="48"></a>
-                    <a href="https://www.facebook.com/futureniyi" target="_blank"><img src="images/facebook.svg"
-                            alt="Facebook" width="48" height="48"></a>
-                    <a href="https://x.com/hiniyi" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X"
-                            width="48" height="48"></a>
-                </div>
-
-                <div class="footer-author">
-                    <p id="lastModified"></p>
-                </div>
-            </div>
-        </footer>
-    </div>
+            
+            <p id="lastModified"></p>
+           
+        </div>
+    </footer>
+    <!-- </div> -->
     <script type="module" src="scripts/final.js"></script>
 
 </body>

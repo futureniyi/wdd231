@@ -28,15 +28,15 @@
 /* ========================================
    GENERAL LAYOUT & TYPOGRAPHY
    ======================================== */
+/* Container */
 
-.site-wrapper {
-    display: grid;
+body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--primary-font);
     line-height: 1.6;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--text-color-dark)
 }
 
 .container {
@@ -45,28 +45,68 @@
     padding: 0 1rem;
 }
 
-/* Typography */
+.section-primary {
+    padding: 2rem;
+    background-color: var(--primary-color);
+
+}
+
+.section-one {
+    padding: 2rem;
+    background-color: var(--first-row-color);
+}
+
+.section-two {
+    padding: 2rem;
+    background-color: var(--second-row-color);
+}
+
+/* Heading */
+
 h1 {
-    color: var(--border-color);
-    font-size: 1.7rem;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: var(--primary-font);
+    font-family: var(--serif-font);
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    padding: 1rem 0 0.5rem 0;
 }
 
 h2 {
-    font-family: var(--primary-font);
-    font-size: 1.25rem;
-    color: var(--highlight-color);
-    padding: 1rem 0 0.5rem 0;
+    font-family: var(--serif-font);
     text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0 0.5rem 0;
 }
 
 h3 {
-    font-family: var(--primary-font);
-    color: var(--secondary-color);
-    padding: 0.5rem 0;
+    font-family: var(--serif-font);
     text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.h1-alt {
+    color: var(--text-color);
+}
+
+.h2-alt {
+    color: var(--text-color);
+}
+
+.h3-alt {
+    color: var(--text-color);
+}
+
+/* Lists */
+li {
+    list-style: decimal;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 /* Links */
@@ -79,22 +119,18 @@ a {
 
 a:hover,
 a:active {
-    color: var(--text-color);
     filter: saturate(50%);
+    text-decoration: underline;
 }
 
-/* Lists */
-li {
-    list-style: decimal;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+img:hover {
+    filter: saturate(50%);
 }
 
 /* Button Hover Effects */
 button:hover {
     filter: saturate(50%);
 }
-
 
 /* ========================================
    HEADER & NAVIGATION
@@ -207,12 +243,12 @@ footer p {
     font-weight: bold;
 }
 
-.footer-address,
-.footer-author {
+.footer-address {
     display: flex;
     flex-direction: column;
     justify-content: center;
     column-gap: 8px;
+    color: var(--text-color);
 }
 
 /* Social Media Links */
@@ -279,6 +315,18 @@ footer p {
     overflow: visible;
 }
 
+/* ========================================
+    PAGE H1
+   ======================================== */
+
+.page-heading {
+    color: var(--highlight-color);
+    background-color: #f4f3f3;
+}
+
+.page-heading h1 {
+    color: var(--primary-color);
+}
 
 /* ========================================
    HOME PAGE
@@ -304,6 +352,7 @@ footer p {
 
 .home-hero-title {
     grid-area: title;
+    color: var(--highlight-color);
 }
 
 .hero-image {
@@ -342,18 +391,6 @@ footer p {
 }
 
 /* Spotlight Section */
-.spotlight {
-    padding: 2rem 1rem;
-    background-color: var(--first-row-color);
-    margin: 0 auto;
-}
-
-.spotlight-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
 
 .spotlight-grid {
     display: grid;
@@ -410,7 +447,7 @@ footer p {
     line-height: 1.4;
 }
 
-.spotlight-button {
+.btn {
     grid-area: button;
     align-self: start;
     text-decoration: none;
@@ -424,8 +461,9 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
-.spotlight-button:hover {
+.btn:hover {
     color: var(--highlight-color);
+    text-decoration: none;
 }
 
 /* Prize Section */
@@ -479,40 +517,10 @@ footer p {
     margin-top: 0.3rem;
 }
 
-.prize-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6em 1.2em;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.prize-button:hover {
-    color: var(--highlight-color);
-    filter: saturate(50%);
-}
-
-/* FAQ Section */
-.faq {
-    padding: 2rem;
-    background-color: var(--primary-color);
-}
-
-.faq h2 {
-    font-family: var(--primary-font);
-    font-size: 2rem;
-    text-align: center;
-    color: var(--text-color);
-    margin-bottom: 2rem;
-}
-
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
+    color: var(--text-color);
 }
 
 .faq-item {
@@ -552,18 +560,18 @@ footer p {
     margin: 0 auto;
 }
 
-.page-heading {
+/* Contact Information */
+.contact-info {
+    color: #444;
+}
+
+/* .contact-page-heading {
     text-align: center;
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: left;
-}
-
-/* Contact Information */
-.contact-info {
-    color: #444;
-}
+} */
 
 .contact-info h3 {
     text-align: center;
@@ -687,19 +695,6 @@ input[type=submit]:hover {
     text-align: left;
 }
 
-/* FAQ Section (Contact) */
-.faq-sec {
-    padding: 2rem;
-    background-color: var(--primary-color);
-}
-
-.faq-heading {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
 /* Visit Message */
 .visit-sec {
     display: flex;
@@ -719,43 +714,6 @@ input[type=submit]:hover {
 /* ========================================
    AWARDS PAGE
    ======================================== */
-
-/* Awards Sections */
-.prize-cat-sec {
-    padding: 2rem;
-}
-
-.prize-det-sec {
-    padding: 2rem;
-    background-color: var(--first-row-color);
-}
-
-.prize-win-sec {
-    padding: 2rem;
-    background-color: var(--second-row-color);
-}
-
-/* Awards Headings */
-.prize-cat-heading {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.prize-det-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.prize-win-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
 
 /* Filter Buttons */
 .prize-filter-buttons,
@@ -863,43 +821,6 @@ input[type=submit]:hover {
 /* ========================================
    DONATE PAGE
    ======================================== */
-
-/* Donate Sections */
-.donation-process-sec {
-    padding: 2rem;
-}
-
-.donors-list-sec {
-    padding: 2rem;
-    background-color: var(--first-row-color);
-}
-
-.wall-of-fame-sec {
-    padding: 2rem;
-    background-color: var(--second-row-color);
-}
-
-/* Donate Headings */
-.donation-process-heading {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.donors-list-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.wall-of-fame-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
 
 /* Donation Steps */
 .donation-steps {
@@ -1084,3 +1005,4 @@ dialog p {
 .quotes {
     text-align: center;
 }
+
