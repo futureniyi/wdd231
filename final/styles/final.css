@@ -1,3 +1,7 @@
+/* ========================================
+   CSS RESET & ROOT VARIABLES
+   ======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +42,6 @@ body {
 .section-primary {
     padding: 2rem;
     background-color: var(--primary-color);
-
 }
 
 .section-one {
@@ -78,15 +81,8 @@ h3 {
     padding: 1rem 0 0.5rem 0;
 }
 
-.h1-alt {
-    color: var(--text-color);
-}
-
-.h2-alt {
-    color: var(--text-color);
-}
-
-.h3-alt {
+/* NEW utility class replacing .h1-alt, .h2-alt, .h3-alt */
+.text-light {
     color: var(--text-color);
 }
 
@@ -95,7 +91,6 @@ li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
 
 a {
     text-decoration: none;
@@ -290,7 +285,6 @@ footer p {
     color: var(--primary-color);
 }
 
-
 .home-hero {
     background: var(--primary-color);
     padding: 2rem 1rem;
@@ -347,7 +341,6 @@ footer p {
     color: var(--primary-color);
     filter: saturate(50%);
 }
-
 
 .spotlight-grid {
     display: grid;
@@ -903,4 +896,3 @@ dialog p {
 .quotes {
     text-align: center;
 }
-
