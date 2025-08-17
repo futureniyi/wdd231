@@ -1,10 +1,10 @@
 [
     {
         "prizeName": "Best Graduating Student – Senior School (SS3)",
-        "objective": "To recognize and reward the best graduating students from both junior and senior schools, encouraging academic excellence and dedication.",
+        "objective": "To recognize and reward the best graduating student from the senior school, encouraging academic excellence and dedication.",
         "criteria": [
-            "Must be the best graduating student from their respective school.",
-            "Open to both Junior School and Senior School."
+            "Must be the best graduating student from the senior school.",
+            "Open only to graduating students of Senior School."
         ],
         "categories": "RHS Alumni Excellence Award",
         "nominationProcess": "Nominated by principal based on academic performance",
@@ -14,9 +14,10 @@
     },
     {
         "prizeName": "Best in Literature-in-English – Patricia Chukwuma Award",
-        "objective": "To recognize and reward the best graduating students from Senior School, encouraging academic excellence and dedication.",
+        "objective": "To recognize and reward the best graduating student in Literature-in-English from the senior school, encouraging academic excellence and dedication.",
         "criteria": [
-            "Must be the best graduating student from Senior School."
+            "Must be a graduating student from the senior school.",
+            "Must be the best student in Literature-in-English."
         ],
         "categories": "RHS Alumni Excellence Award",
         "nominationProcess": "Selected based on outstanding performance in Literature-in-English",
@@ -26,10 +27,10 @@
     },
     {
         "prizeName": "Best Graduating Student – Junior School (JSS3)",
-        "objective": "To recognize and reward the best graduating students from both junior and senior schools, encouraging academic excellence and dedication.",
+        "objective": "To recognize and reward the best graduating student from the junior school, encouraging academic excellence and dedication.",
         "criteria": [
-            "Must be the best graduating student from their respective school.",
-            "Open to both Junior School and Senior School."
+            "Must be the best graduating student from the junior school.",
+            "Open only to graduating students of Junior School."
         ],
         "categories": "RHS Alumni Excellence Award",
         "nominationProcess": "Nominated by principal based on academic performance",
